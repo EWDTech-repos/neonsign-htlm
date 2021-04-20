@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Custom Neon Sign</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/utility.css" />
+    <link rel="stylesheet" href="assets/css/media1900.css" />
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+</head>
+<style>
+    #mockup1,
+    #mockup2,
+    #mockup3 {
+        position: absolute;
+        white-space: nowrap;
+    }
+    
+    .disable-select {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+</style>
+
+<body class="bg-img disable-select">
+    <section class="main-padding pt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 col-lg-7 col-sm-12 px-1 px-sm-2 px-md-2 px-lg-2">
+                    <!-- Top Text code start -->
+                    <div class="bg-white pl-4 pr-4 pt-2 pb-2 box-shadow-font">
+
+
+
+
+                        <section class="pb-3 d-none d-md-block">
+                            <div class="display-1 RetroSignature cl-F34EFF text-center">
+                                Custom Neon Sign
+                            </div>
+                            <div class="text-center f-15 robotoLight pt-2 top-heading">
+                                IT'S TIME TO SHINE WITH YOUR OWN NEON SIGNS!
+                            </div>
+                        </section>
+                        <!-- Top Text code end -->
+                        <!-- tabs view only on mobile screens code start-->
+                        <div class="">
+                            <div class="d-flex m-0 justify-content-between pt-2">
+                                <div class="col-lg-2 col-md-2 mob_slide_image col-sm-2 p-0 text-center img-tabs img-tab-shadow mobile_tab_img_active" src="assets/img/room_wall.jpg" onclick="currentSlide(this)">
+                                    <p class="robotoMedium m-0 top-tabs room py-1 py-sm-1 py-md-2 py-lg-2">Room </p>
+                                </div>
+                                <div class="col-lg-2 col-md-2 mob_slide_image col-sm-2 p-0 text-center img-tab-shadow img-tabs" src="assets/img/hedge_wall.jpg" onclick="currentSlide(this)">
+                                    <p class="robotoMedium m-0 top-tabs green py-1 py-sm-1 py-md-2 py-lg-2">Green</p>
+                                </div>
+                                <div class="col-lg-2 col-md-2 mob_slide_image col-sm-2 p-0 text-center img-tab-shadow img-tabs" src="assets/img/bridal_wall.jpg" onclick="currentSlide(this)">
+                                    <p class="robotoMedium m-0 top-tabs bridal py-1 py-sm-1 py-md-2 py-lg-2">Bridal</p>
+                                </div>
+                                <div class="col-lg-2 col-md-2 mob_slide_image col-sm-2 p-0 text-center img-tab-shadow img-tabs" src="assets/img/baby_room.jpg" onclick="currentSlide(this)">
+                                    <p class="robotoMedium m-0 top-tabs baby_room py-1 py-sm-1 py-md-2 py-lg-2">Baby room</p>
+                                </div>
+                                <div class="col-lg-2 col-md-2 mob_slide_image col-sm-2 p-0 text-center img-tab-shadow img-tabs" src="assets/img/night_room.jpg" onclick="currentSlide(this)">
+                                    <p class="robotoMedium m-0 top-tabs  night py-1 py-sm-1 py-md-2 py-lg-2">Night</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tabs view only on mobile screens code end-->
+                        <div class="mySlides main-img rounded h-700" id="sence" style="background: url(assets/img/room_wall.jpg) center center / 100% no-repeat; position:relative;">
+                            <!-- Top Text code end -->
+                            <div id="mockupmain">
+                                <div id="whole-backing" style="position: absolute; width: 141.844px; height: 80px; left: 407.125px; top: 150px;"></div>
+                                <div id="mockup1" class="mockup" onmouseover="onClickFun('noenText1',1);">
+                                    <div class="backing-style">
+                                        <span id="noenText1backing" class="Alexa noenText1backing noen noenText1 backing-text-behind backText1-top backing-clear z-index-1" data-height="7" data-aspect_ratio="2.621" data-color="cl-tube-9" data-class="Alexa" style="position: absolute; font-size: 80px;">
+                                            text
+                                        </span>
+                                        <span id="noenText1" class="Alexa cl-tube-9-text noen noenText1 z-index-1" data-class="Alexa" data-color="cl-tube-9" data-height="7" data-aspect_ratio="2.621" style="position: absolute; font-size: 80px;">Your Text</span>
+                                    </div>
+                                </div>
+                                <div id="mockup2" class="mockup" onmouseover="onClickFun('noenText2',2);">
+                                    <div class="backing-style">
+                                        <span id="neonbacking2" class="Alexa noenText noen2 backing-text-behind backText2-top backing-clear z-index-2" data-class="Alexa" data-height="7" data-aspect_ratio="2.621" data-color="cl-tube-2" style="position: absolute; display: none; font-size: 80px;">
+                                            text
+                                        </span>
+                                        <span style="position: absolute; display: none; font-size: 80px;" class="Alexa noen noenText2 cl-tube-2-text z-index-2" data-height="7" data-aspect_ratio="2.621" id="noenText2" data-class="Alexa" data-color="cl-tube-2">Your Text 2</span>
+                                    </div>
+                                </div>
+                                <div id="mockup3" class="mockup" onmouseover="onClickFun('noenText3',3);">
+                                    <div class="backing-style">
+                                        <span id="neonbacking3" class="Alexa noenText3 noen backing-text-behind backText3-top backing-clear z-index-3" data-class="Alexa" data-height="7" data-aspect_ratio="2.621" data-color="cl-tube-3" style="position: absolute; display: none; font-size: 80px;">
+                                            text
+                                        </span>
+                                        <span style="position: absolute; display: none; font-size: 80px;" class="Alexa noen cl-tube-3-text noenText3 z-index-3" data-height="7" data-aspect_ratio="2.621" id="noenText3" data-class="Alexa" data-color="cl-tube-3">Your Text 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapper-secleted-output">
+                                <div class="d-flex align-items-center">
+                                    <div class="blink_text cursor-pointer bg-white">
+                                        <div class="blinker">Click here to order on Etsy</div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between block-font flex-wrap">
+                                    <div class="w-100 w-sm-50 w-md-50 w-lg-50">
+                                        <div class="cl-606060 f-22 text-white text-overflow">
+                                            <span class="robotoMedium">Text:</span>
+                                            <span class="pl-1 robotoRegular" id="finaltext"><span id="lineonefinaltext"></span><span id="linetwofinaltext"></span><span id="linethreefineltext"></span></span>
+                                        </div>
+                                        <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Size:</span><span class="pl-1 robotoRegular size">35x20cm (14.0x8.0 cm);</span></div>
+                                        <div class="cl-606060 f-22 text-white">
+                                            <span class="robotoMedium">Backing:</span><span class="pl-1 robotoRegular"><span class="backing-color-text"> Clear Acrylic</span>,<span class="backing-shape-text"> Text Shape</span>;</span>
+                                        </div>
+                                        <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Deliver</span><span class="pl-1 robotoRegular">4-19-2021;</span></div>
+                                    </div>
+                                    <div class="w-100 w-sm-50 w-md-50 w-lg-50">
+                                        <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Font:</span><span id="finalfont" class="pl-1 robotoRegular"></span></div>
+                                        <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Color:</span><span class="pl-1 robotoRegular color-name">Light-Yellow;</span></div>
+                                        <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Install:</span><span class="pl-1 robotoRegular install-text">Screws, </span></div>
+                                        <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Price:</span><span class="pl-1 robotoBold f-19 "><span class="price">0</span>USD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5 col-sm-12 px-1 px-sm-2 px-md-2 px-lg-2">
+                    <div class="bg-white pb-1 pt-0 pt-sm-1 pt-md-4 pt-lg-4 pl-3 pr-3 box-shadow-font">
+                        <div class="d-flex">
+                            <div class="w-50 mr-lg-3 mr-md-3 mr-sm-3 mr-0">
+                                <ul class="nav pb-1 pb-sm-2 pb-md-3 pb-lg-3" id="lineTab" role="tablist">
+                                    <li onclick="selectLineColumn(this);" class="nav-item one" role="presentation">
+                                        <a class="nav-link-tabs active f-19-tabs robotoMedium common-btn rounded" id="one-line-tab" data-tab="one" data-toggle="tab" href="#oneline" role="tab" aria-controls="online" onclick="tabClick('one')" aria-selected="true">
+                                            One Line
+                                        </a>
+                                    </li>
+                                    <li onclick="selectLineColumn(this);" class="nav-item two" role="presentation">
+                                        <a class="nav-link-tabs f-19-tabs robotoMedium common-btn rounded" id="two-line-tab" data-tab="two" data-toggle="tab" href="#twoline" role="tab" aria-controls="twoline" aria-selected="false" onclick="tabClick('two')">
+                                            Two Line
+                                        </a>
+                                    </li>
+                                    <li onclick="selectLineColumn(this);" class="nav-item three" role="presentation">
+                                        <a class="nav-link-tabs f-19-tabs robotoMedium common-btn rounded" id="three-line-tab" data-tab="three" data-toggle="tab" href="#threeline" role="tab" aria-controls="threeline" aria-selected="false" onclick="tabClick('three')">
+                                            Three Line
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- code changes -->
+                                <div class="">
+                                    <input type="hidden" id="input-text-id" value="#noenText1" />
+                                    <input type="hidden" id="input-font-id" value="#one_text_1" />
+                                    <div class="tab-content pt-1 pt-sm-2 pt-md-2 pt-lg-2" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="oneline" role="tabpanel" aria-labelledby="one-line-tab">
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" id="one_text_1" onfocus="onFocusFun('noenText1','one_text_1');" value="First line" oninput="updateText(this);" data-tab="tab-one" placeholder="First line" rows="1" cols="30">Nikko</textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="twoline" role="tabpanel" aria-labelledby="two-line-tab">
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" oninput="updateText(this);" onfocus="onFocusFun('noenText1','two_text_1');" value="First line" id="two_text_1" data-tab="tab-two" placeholder="First line" rows="1" cols="30">Neoonecrafts</textarea>
+                                                    <textarea class="form-control" oninput="updateText(this);" onfocus="onFocusFun('noenText2','two_text_2');" value="2nd line" id="two_text_2" data-tab="tab-two" placeholder="Two line" rows="1" cols="30">EST. 2020</textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="threeline" role="tabpanel" aria-labelledby="three-line-tab">
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" oninput="updateText(this);" onfocus="onFocusFun('noenText1','three_text_1');" value="First line" id="three_text_1" data-tab="tab-three" placeholder="First line" rows="1" cols="30">Custom</textarea>
+                                                    <textarea class="form-control" oninput="updateText(this);" onfocus="onFocusFun('noenText2','three_text_2');" value="2nd line" id="three_text_2" data-tab="tab-three" placeholder="Two line" rows="1" cols="30">Your</textarea>
+                                                    <textarea class="form-control" oninput="updateText(this);" onfocus="onFocusFun('noenText3','three_text_3');" value="3rd line" id="three_text_3" data-tab="tab-three" placeholder="Three line" rows="1" cols="30">NeonSign</textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- code changes -->
+                            </div>
+                            <div class="w-50 ml-3">
+                                <div class="row pb-1 pb-sm-2 pb-md-2 pb-lg-2 m-0 border-bottom flex-nowrap">
+                                    <div class="col-md-6 border-right pt-1 pt-sm-2 pt-md-2 pt-lg-2 pl-0 pr-0 text-center">
+                                        <div class="robotoRegular pb-2 pb-sm-2 pb-md-3 pb-lg-3 f-16">Sign Size:</div>
+                                        <div class="d-flex justify-content-around">
+                                            <div class="button-color" onclick="decreaseSize();">
+                                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="button-color " onclick="increaseSize();">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pt-1 pt-sm-2 pt-md-2 pt-lg-2 pr-0 text-center d-flex align-self-end justify-content-between">
+                                        <!-- <div class="robotoRegular pb-2 pb-sm-2 pb-md-3 pb-lg-3 f-16">Row Height:</div>
+                                        <div class="d-flex justify-content-around">
+                                            <div class="button-color" onclick="decreaseLineHeight()">
+                                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="button-color " onclick="increaseLineHeight()">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </div>
+                                        </div> -->
+
+                                        <!-- There is text alignment buttons -->
+                                        <!-- <div class="d-flex "> -->
+                                            <div class="button-color cursor-pointer" onclick="textAlign('left')">
+                                                <i class="fa fa-caret-left f-17-icon" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="button-color cursor-pointer" onclick="textAlign('center')">
+                                                <i class="fa fa-bars f-17-icon" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="button-color cursor-pointer" onclick="textAlign('right')">
+                                                <i class="fa fa-caret-right f-17-icon" aria-hidden="true"></i>
+                                            </div>
+                                        <!-- </div> -->
+                                        <!-- There is text alignment buttons -->
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- The font section is to be changed -->
+                        <div>
+                            <div class="robotoMedium pb-1 f-18">Select Your Font.</div>
+                        </div>
+                        <div class="p-1 p-sm-2 p-md-2 p-lg-2 box-shadow-font">
+                            <div class="row pl-2 pr-2 flex-nowrap">
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Alexa font-div d-flex justify-content-around" data-height="7" data-aspect_ratio="2.621" data-class="Alexa" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Bayview font-div d-flex justify-content-around" data-height="8" data-aspect_ratio="3.505" data-class="Bayview" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Amsterdam font-div d-flex justify-content-around" data-height="7" data-aspect_ratio="2.779" data-class="Amsterdam" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Greenworld font-div d-flex justify-content-around" data-height="7" data-aspect_ratio="2.683" data-class="Greenworld" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded NewCursive font-div d-flex justify-content-around" data-height="7" data-aspect_ratio="2.979" data-class="NewCursive" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Barcelona font-div d-flex justify-content-around" data-height="9" data-aspect_ratio="3.906" data-class="Barcelona" onclick="getClass(this);">The</div>
+                                </div>
+                            </div>
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Vintage font-div d-flex justify-content-around" data-height="7" data-aspect_ratio="3.028" data-class="Vintage" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Amanda font-div d-flex justify-content-around" data-height="9" data-aspect_ratio="3.384" data-class="Amanda" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Freespirit font-div d-flex justify-content-around" data-height="10" data-aspect_ratio="3.443" data-class="Freespirit" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Chelsea font-div d-flex justify-content-around" data-height="10" data-aspect_ratio="3.828" data-class="Chelsea" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Signature font-div d-flex justify-content-around" data-height="9" data-aspect_ratio="3.230" data-class="Signature" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Austin font-div d-flex justify-content-around" data-height="8" data-aspect_ratio="3.454" data-class="Austin" onclick="getClass(this);">The</div>
+                                </div>
+                            </div>
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Neonscript font-div d-flex justify-content-around" data-height="12" data-aspect_ratio="4.520" data-class="Neonscript" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Freehand font-div d-flex justify-content-around" data-height="9" data-aspect_ratio="4.131" data-class="Freehand" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded LoveNote font-div d-flex justify-content-around" data-height="7" data-aspect_ratio="2.681" data-class="LoveNote" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Northshore font-div d-flex justify-content-around" data-height="10" data-aspect_ratio="4.871" data-class="Northshore" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Beachfront font-div d-flex justify-content-around" data-height="8" data-aspect_ratio="3.181" data-class="Beachfront" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Royalty font-div d-flex justify-content-around" data-height="9" data-aspect_ratio="3.052" data-class="Royalty" onclick="getClass(this);">The</div>
+                                </div>
+                            </div>
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Rocket font-div d-flex justify-content-around" data-height="7" data-aspect_ratio="2.616" data-class="Rocket" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded WildScript font-div d-flex justify-content-around" data-height="12" data-aspect_ratio="4.840" data-class="WildScript" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Avante font-div d-flex justify-content-around" data-height="5" data-aspect_ratio="2.381" data-class="Avante" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Monaco font-div d-flex justify-content-around" data-height="5" data-aspect_ratio="2.205" data-class="Monaco" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Waikiki font-div d-flex justify-content-around" data-height="5" data-aspect_ratio="1.835" data-class="Waikiki" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded ClassicType font-div d-flex justify-content-around" data-height="5" data-aspect_ratio="2.112" data-class="ClassicType">
+                                        The
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Typewriter font-div d-flex justify-content-around" data-height="5" data-aspect_ratio="2.017" data-class="Typewriter" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Buttercup font-div d-flex justify-content-around" data-height="6" data-aspect_ratio="4.317" data-class="Buttercup" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Melbourne font-div d-flex justify-content-around" data-height="6" data-aspect_ratio="2.500" data-class="Melbourne" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded NeoTokyo font-div d-flex justify-content-around" data-height="6" data-aspect_ratio="2.609" data-class="NeoTokyo" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded LoveNeon font-div d-flex justify-content-around" data-height="11" data-aspect_ratio="1.623" data-class="LoveNeon" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Marquee font-div d-flex justify-content-around" data-height="11" data-aspect_ratio="2.811" data-class="Marquee" onclick="getClass(this);">The</div>
+                                </div>
+                            </div>
+                            <div class="row pt-2 pl-2 pr-2 flex-nowrap">
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Mayfair font-div d-flex justify-content-around" data-height="" data-aspect_ratio="" data-class="Mayfair" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded NeonGlow font-div d-flex justify-content-around" data-height="11" data-aspect_ratio="2.556" data-class="NeonGlow" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded NeonLite font-div d-flex justify-content-around" data-height="6" data-aspect_ratio="1.992" data-class="NeonLite" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Neontrace font-div d-flex justify-content-around" data-height="8" data-aspect_ratio="1.773" data-class="Neontrace" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded Nevada font-div d-flex justify-content-around" data-height="11" data-aspect_ratio="3.223" data-class="Nevada" onclick="getClass(this);">The</div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center pl-1 pr-1">
+                                    <div class="font-btn border rounded SciFi disturb-font font-div d-flex justify-content-around" data-height="11" data-aspect_ratio="1.468" data-class="SciFi" onclick="getClass(this);">The</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- The font section is to be changed -->
+                        <div class="d-flex justify-content-between">
+                            <!-- Color tubes main wrapper -->
+                            <div class="w-100 mr-1 mr-sm-2 mr-md-3 mr-lg-3">
+                                <div class="robotoMedium pt-2 pt-sm-2 pt-md-2 pt-lg-2 pb-1 f-18">Select Your Color.</div>
+
+                                <div class="d-flex px-1 px-sm-2 px-md-3 px-lg-3 justify-content-between">
+                                    <div class="color-selection clr-tube cl-tube-1" data-class="cl-tube-1" data-name="Light-Yellow" onclick="changeclass(this)"></div>
+                                    <div class="color-selection clr-tube cl-tube-2" data-class="cl-tube-2" data-name="Yellow" onclick="changeclass(this)"></div>
+                                    <div class="color-selection clr-tube cl-tube-3" data-class="cl-tube-3" data-name="Orange" onclick="changeclass(this)"></div>
+                                    <div class="color-selection clr-tube cl-tube-4" data-class="cl-tube-4" data-name="Dark-Blue" onclick="changeclass(this)"></div>
+                                    <div class="color-selection clr-tube cl-tube-5" data-class="cl-tube-5" data-name="Sky-Blue" onclick="changeclass(this)"></div>
+                                    <div class="color-selection clr-tube cl-tube-6" data-class="cl-tube-6" data-name="Ice-Blue" onclick="changeclass(this)"></div>
+                                    <div class="color-selection clr-tube cl-tube-7" data-class="cl-tube-7" data-name="Green" onclick="changeclass(this)"></div>
+                                    <div class="color-selection clr-tube cl-tube-8" data-class="cl-tube-8" data-name="Light-Pink" onclick="changeclass(this)"></div>
+                                    <div class="color-selection clr-tube cl-tube-9-on" data-class="cl-tube-9" data-name="Hot-Pink" onclick="changeclass(this)"></div>
+                                    <div class="color-selection clr-tube cl-tube-10" data-class="cl-tube-10" data-name="Red" onclick="changeclass(this)"></div>
+                                    <div class="color-selection clr-tube cl-tube-11" data-class="cl-tube-11" data-name="Purple" onclick="changeclass(this)"></div>
+                                </div>
+                            </div>
+                            <!-- Color tubes main wrapper -->
+
+                            <!-- Backing color tubes main wrapper -->
+                            <div class="w-50 ml-1 ml-sm-2 ml-md-3 ml-lg-3 d-none">
+                                <div class="robotoMedium pt-2 pt-sm-2 pt-md-2 pt-lg-2 pb-1 f-18">White Tubes:</div>
+                                <div class="d-flex px-1 px-sm-2 px-md-3 px-lg-3 justify-content-between">
+                                    <div class="color-selection white-tube bg-white wh-tube-1" data-class="wh-tube-1" data-name="White" onclick="changeclass(this)"></div>
+                                    <div class="color-selection white-tube bg-white wh-tube-2" data-class="wh-tube-2" data-name="Warm-White" onclick="changeclass(this)"></div>
+                                    <div class="color-selection white-tube bg-white wh-tube-3" data-class="wh-tube-3" data-name="Yellow-White-Tube" onclick="changeclass(this)"></div>
+                                    <div class="color-selection white-tube bg-white wh-tube-4" data-class="wh-tube-4" data-name="Orange-White-Tube" onclick="changeclass(this)"></div>
+                                    <div class="color-selection white-tube bg-white wh-tube-5" data-class="wh-tube-5" data-name="Blue-White-Tube" onclick="changeclass(this)"></div>
+                                    <div class="color-selection white-tube bg-white wh-tube-6" data-class="wh-tube-6" data-name="Super-Cold-White" onclick="changeclass(this)"></div>
+                                    <div class="color-selection white-tube bg-white wh-tube-7" data-class="wh-tube-7" data-name="Green-White-Tube" onclick="changeclass(this)"></div>
+                                    <div class="color-selection white-tube bg-white wh-tube-8" data-class="wh-tube-8" data-name="Light-Pink-White-Tube" onclick="changeclass(this)"></div>
+                                    <div class="color-selection white-tube bg-white wh-tube-9" data-class="wh-tube-9" data-name="Hot-Pink-White-Tube" onclick="changeclass(this)"></div>
+                                    <div class="color-selection white-tube bg-white wh-tube-10" data-class="wh-tube-10" data-name="Red-White-Tube" onclick="changeclass(this)"></div>
+                                    <div class="color-selection white-tube bg-white wh-tube-11" data-class="wh-tube-11" data-name="Purple-White-Tube" onclick="changeclass(this)"></div>
+                                </div>
+                            </div>
+                            <!-- Backing color tubes main wrapper -->
+                        </div>
+                        <!-- The font section is to be changed -->
+
+                        <!-- Colors code section  -->
+                        <div class="row pt-2 pt-sm-2 pt-md-2 pt-lg-2 pb-1 m-0 border-bottom flex-nowrap">
+                            <div class="col-md-6 border-right pt-2 px-1 px-sm-2 px-md-2 px-lg-2 text-center">
+                                <div class="robotoMedium pb-1 pb-sm-2 pb-md-2 pb-lg-2 f-16">Backing Colors.</div>
+                                <div class="justify-content-center">
+                                    <ul class="nav d-flex pb-1 pb-sm-2 pb-md-2 pb-lg-2 justify-content-between" id="backingColorOption">
+                                        <li id="clearBackingColor btn-padding" class="nav-item backing-li rounded" role="presentation" data-class="backing-clear" onclick="backingClass(this)">
+                                            <a class="nav-link-btns f-16-btn robotoMedium px-1 px-sm-2 px-md-2 px-lg-3 py-1 py-sm-2 py-md-2 py-lg-2 common-btn1 bg-F34EFF ">Clear Acrylic</a>
+                                        </li>
+                                        <li id="whiteBackingColor btn-padding" class="nav-item backing-li rounded" role="presentation" data-class="backing-white" onclick="backingClass(this)">
+                                            <a class="nav-link-btns f-16-btn robotoMedium px-1 px-sm-2 px-md-2 px-lg-3 py-1 py-sm-2 py-md-2 py-lg-2 common-btn1">White</a>
+                                        </li>
+                                        <li id="blackBackingColor btn-padding" class="nav-item backing-li rounded" role="presentation" data-class="backing-black" onclick="backingClass(this)">
+                                            <a class="nav-link-btns f-16-btn robotoMedium px-1 px-sm-2 px-md-2 px-lg-3 py-1 py-sm-2 py-md-2 py-lg-2 common-btn1">Black</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-1 px-sm-2 px-md-2 px-lg-2 pt-2 text-center">
+                                <div class="robotoMedium pb-1 pb-sm-2 pb-md-2 pb-lg-2 f-16">Backing Shapes</div>
+                                <div class="justify-content-center">
+                                    <ul class="nav d-flex pb-1 pb-sm-2 pb-md-2 pb-lg-2 justify-content-between" id="backingShapeOption">
+                                        <li id="btn-padding" class="nav-item backing-shape-li" role="presentation " data-class="backing-clear" onclick="backingShapeClass(this)">
+                                            <a class="nav-link-btns f-16-btn robotoMedium px-1 px-1 px-sm-2 px-md-2 px-lg-3 py-1 py-sm-2 py-md-2 py-lg-2 common-btn2 bg-F34EFF">Text Shape</a>
+                                        </li>
+                                        <li id="btn-padding" class="nav-item backing-shape-li rounded" role="presentation" data-class="shape-rectangle" onclick="backingShapeClass(this)">
+                                            <a class="nav-link-btns f-16-btn robotoMedium px-1 px-sm-2 px-md-2 px-lg-3 py-1 py-sm-2 py-md-2 py-lg-2 common-btn2">Rectangle</a>
+                                        </li>
+                                        <li id="btn-padding" class="nav-item backing-shape-li rounded" role="presentation" data-class="shape-invisible" onclick="backingShapeClass(this)">
+                                            <a class="nav-link-btns f-16-btn robotoMedium px-1 px-sm-2 px-md-2 px-lg-3 py-1 py-sm-2 py-md-2 py-lg-2 common-btn2">Invisible</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Colors code section  -->
+
+                        <div class="">
+                            <div class="robotoMedium pt-1 pt-sm-2 pt-md-2 pt-lg-2 pb-1 f-18">Accesory</div>
+                        </div>
+                        <div class="p-2 box-shadow-font">
+                            <div class="">
+                                <div class="row pt-2 px-1 px-sm-2 px-md-2 px-lg-2 clas-no-wrap">
+                                    <div class="col-md-2 col-lg-2 col-sm-2 col-2 text-center p-1">
+                                        <div class="accessary-btn border rounded common-btn3 bg-F34EFF " onclick="commonBtnFun3(this)">
+                                            Screws
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-sm-2 col-2 text-center p-1">
+                                        <div class="accessary-btn border rounded common-btn3" onclick="commonBtnFun3(this)">
+                                            Fishline
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-sm-2 col-2 text-center p-1">
+                                        <div class="accessary-btn border rounded common-btn3" onclick="commonBtnFun3(this)">
+                                            Chain
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-lg-3 col-sm-3 col-4 text-center p-1">
+                                        <div class="accessary-btn border rounded common-btn3" onclick="commonBtnFun3(this)">
+                                            Ceiling-Chain
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-sm-2 col-2 text-center p-1">
+                                        <div class="accessary-btn border rounded common-btn3" onclick="commonBtnFun3(this)">
+                                            Stand
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-sm-2 col-2 text-center p-1">
+                                        <div class="accessary-btn border rounded common-btn3" onclick="commonBtnFun3(this)">
+                                            Switch
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-lg-2 col-sm-2 col-2 text-center p-1">
+                                        <div class="accessary-btn border rounded common-btn3" onclick="commonBtnFun3(this)">
+                                            Dimmer
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-sm-2 col-2 text-center p-1">
+                                        <div class="accessary-btn border rounded common-btn3" onclick="commonBtnFun3(this)">
+                                            Blink
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-sm-2 col-2 text-center p-1">
+                                        <div class="accessary-btn border rounded common-btn3" onclick="commonBtnFun3(this)">
+                                            Outdoor
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-4 col-5 text-center p-1">
+                                        <div class="accessary-btn border rounded common-btn3" onclick="commonBtnFun3(this)">
+                                            <div class="blink_text border-0 p-0 cursor-pointer">
+                                                <div class="blinker">Rush-My-order-<span class="blink_text-Inner">(5x Faster)</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/script/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script>
+        function partialCode(id) {
+            let cls = $("." + id).attr("data-class");
+            $.each($(".font-div"), function() {
+                $(this).removeClass("activeFont");
+                if ($(this).hasClass(cls)) {
+                    $(this).addClass("activeFont");
+                }
+            });
+        }
+
+        function onFocusFun(id, id2) {
+            noenText = "." + id;
+            //  <
+            // !--$('#input-text-id').val('#' + id);
+            // -- >
+            partialCode(id);
+            $("#input-font-id").val("#" + id2);
+        }
+
+        function tabClick(txt) {
+            $("#input-font-id").val("#" + txt + "_text_1");
+        }
+
+        function onClickFun(id, count) {
+            noenText = "." + id;
+            // <
+            // !--$('#input-text-id').val('#' + id);
+            // -- >
+            partialCode(id);
+            $.each($(".nav-link-tabs"), function() {
+                if ($(this).hasClass("active")) {
+                    $("#input-font-id").val("#" + $(this).data("tab") + "_text_" + count);
+                }
+            });
+
+            var tube_class = $(noenText).attr("data-color");
+            $.each($(".color-selection"), function() {
+                $(this).removeClass(tube_class + "-on");
+                $(this).removeClass($(this).data("class") + "-on");
+                $(this).addClass($(this).data("class"));
+
+                if ($(this).data("class") == tube_class) {
+                    $(this).addClass(tube_class + "-on");
+                }
+            });
+        }
+
+        function getClass(e) {
+            $.each($(".font-div"), function() {
+                let font_class = $(this).data("class");
+                $(noenText).removeClass(font_class);
+            });
+            $(noenText).addClass($(e).data("class"));
+            $(noenText).attr("data-class", $(e).data("class"));
+            $(noenText).attr("data-height", $(e).data("height"));
+            $(noenText).attr("data-aspect_ratio", $(e).data("aspect_ratio"));
+
+            noenText1 = '.noenText1'
+            noenText2 = '.noenText2'
+            noenText3 = '.noenText3'
+
+            if ($('li.active').hasClass('one'))
+                cost_calcultor($(noenText1));
+            else if ($('li.active').hasClass('two'))
+                cost_calcultor($(noenText1), $(noenText2));
+            else if ($('li.active').hasClass('three'))
+                cost_calcultor($(noenText1), $(noenText2), $(noenText3));
+
+            // $(noenText).parent().parent().attr('onclick').click
+        }
+
+        setInterval(function() {
+            var i = 1;
+            $.each($(".font-div"), function() {
+                $(this).html("<span style='font-family:Arial !important;' class='top-tabs'>" + i + "</span><span>" + $($("#input-font-id").val()).val().substring(0, 4) + "</span>");
+                i++;
+            });
+            $("span.Alexa").removeClass("activeFont");
+        }, 500);
+
+        function changeclass(e) {
+            $tube = $(e).data("class");
+            $.each($(".color-selection"), function() {
+                let clr_class = $(this).data("class");
+                $(this).removeClass(clr_class + "-on");
+                $(this).addClass(clr_class);
+                $(noenText).removeClass(clr_class + "-text");
+            });
+            $(e).removeClass($tube);
+            $(e).addClass($tube + "-on");
+            $(".color-name").text($(e).data("name"));
+            $(noenText).addClass($tube + "-text");
+            $(noenText + "backing").removeClass($tube + "-text");
+            $(noenText).attr("data-color", $tube);
+        }
+
+        function backingClass(e) {
+            $.each($(".backing-li"), function() {
+                let backing_class = $(this).data("class");
+                $(".backing-text-behind").removeClass(backing_class);
+            });
+            $(".backing-color-text").text($(e).text().trim());
+            $(".backing-text-behind").addClass($(e).data("class"));
+        }
+
+        function backingShapeClass(e) {
+            $.each($(".backing-shape-li"), function() {
+                let backing_class = $(this).data("class");
+                // $(noenText).removeClass(backing_class);
+                $(".backing-text-behind").removeClass(backing_class);
+            });
+            $(".backing-shape-text").text($(e).text().trim());
+            $(".backing-text-behind").addClass($(e).data("class"));
+        }
+
+        function commonBtnFun3(e) {
+            var final_price, total_price, install;
+            total_price = parseFloat($('.price').html())
+            if ($(e).hasClass("bg-F34EFF")) {
+                if ($('div.bg-F34EFF').length != 1)
+                    final_price = total_price - 10
+                $(e).removeClass("bg-F34EFF ");
+
+            } else {
+                if ($('div.bg-F34EFF').length != 0)
+                    final_price = total_price + 10;
+                $(e).addClass("bg-F34EFF");
+            }
+            install = $("div.bg-F34EFF").text();
+            install = install.replace(/\s+/g, ", ");
+            install = install.substring(1);
+            $(".install-text").text(install);
+            $('.price').html(final_price)
+        }
+
+        function textAlign(e) {
+            $(noenText).parent().css({
+                "text-align": e,
+            });
+        }
+
+
+        function mobile_tab_img(elm, img) {
+
+            $('img.' + img).click()
+        }
+    </script>
+
+
+    <script>
+        /************* Drag Mock Up*************/
+
+        $("div.mockup").mousedown(function(e) {
+
+            var senceDiv = $("#sence").offset();
+            var dragDiv = $(noenText)
+            var dragDivOffset = dragDiv.offset();
+            var dragDivOffsetWidth = dragDiv.outerWidth(true)
+            var dragDivOffsetHeight = dragDiv.outerHeight(true)
+            var distanceX = e.pageX - dragDivOffset.left;
+            var distanceY = e.pageY - dragDivOffset.top;
+
+            var divID = $(this).attr('id');
+            inputTextID = divID.substr(divID.length - 1, 1);
+            //updateOptions();
+
+            $(document).mousemove(function(e) {
+                var x = e.pageX - distanceX;
+                var y = e.pageY - distanceY;
+
+                if (x < senceDiv.left) {
+                    x = senceDiv.left;
+                } else if (x > (senceDiv.left + $("#sence").width() - dragDivOffsetWidth)) {
+                    x = senceDiv.left + $("#sence").width() - dragDivOffsetWidth;
+                }
+
+                if (y < senceDiv.top) {
+                    y = senceDiv.top;
+                } else if (y > (senceDiv.top + $("#sence").height() - dragDivOffsetHeight)) {
+                    y = senceDiv.top + $("#sence").height() - dragDivOffsetHeight;
+                }
+
+                $(dragDiv).css({
+                    'position': 'absolute',
+                    'left': x - senceDiv.left + 'px',
+                    'top': y - senceDiv.top + 'px'
+                });
+            });
+
+            $(document).mouseup(function() {
+                $(document).off('mousemove');
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

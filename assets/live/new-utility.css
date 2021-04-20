@@ -1,0 +1,1044 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-image: url("../img/bg-img.png");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+@font-face {
+    font-family: robotoBold;
+    src: url("../fonts/Roboto-Bold.ttf");
+    /* src: url('../fonts/Roboto-Bold.ttf'); */
+}
+
+@font-face {
+    font-family: robotoLight;
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: robotoMedium;
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: robotoRegular;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Alexa;
+    src: url("../fonts/Alexa.ttf");
+}
+
+@font-face {
+    src: url("../fonts/Amanda.ttf");
+    font-family: Amanda;
+}
+
+@font-face {
+    src: url("../fonts/Amsterdam.ttf");
+    font-family: Amsterdam;
+}
+
+@font-face {
+    src: url("../fonts/Austin.ttf");
+    font-family: Austin;
+}
+
+@font-face {
+    src: url("../fonts/Avante.ttf");
+    font-family: Avante;
+}
+
+@font-face {
+    src: url("../fonts/Barcelona.ttf");
+    font-family: Barcelona;
+}
+
+@font-face {
+    src: url("../fonts/Bayview.ttf");
+    font-family: Bayview;
+}
+
+@font-face {
+    src: url("../fonts/Beachfront.ttf");
+    font-family: Beachfront;
+}
+
+@font-face {
+    src: url("../fonts/Buttercup.ttf");
+    font-family: Buttercup;
+}
+
+@font-face {
+    src: url("../fonts/Chelsea.ttf");
+    font-family: Chelsea;
+}
+
+@font-face {
+    src: url("../fonts/ClassicType.ttf");
+    font-family: ClassicType;
+}
+
+@font-face {
+    src: url("../fonts/Freehand.ttf");
+    font-family: Freehand;
+}
+
+@font-face {
+    src: url("../fonts/Freespirit.ttf");
+    font-family: Freespirit;
+}
+
+@font-face {
+    src: url("../fonts/Greenworld.ttf");
+    font-family: Greenworld;
+}
+
+@font-face {
+    src: url("../fonts/Hamillton.ttf");
+    font-family: Hamillton;
+}
+
+@font-face {
+    src: url("../fonts/LoveNeon.ttf");
+    font-family: LoveNeon;
+}
+
+@font-face {
+    src: url("../fonts/LoveNote.ttf");
+    font-family: LoveNote;
+}
+
+@font-face {
+    src: url("../fonts/Marquee.ttf");
+    font-family: Marquee;
+}
+
+@font-face {
+    src: url("../fonts/Mayfair.ttf");
+    font-family: Mayfair;
+}
+
+@font-face {
+    src: url("../fonts/Melbourne.ttf");
+    font-family: Melbourne;
+}
+
+@font-face {
+    src: url("../fonts/Monaco.ttf");
+    font-family: Monaco;
+}
+
+@font-face {
+    src: url("../fonts/NeonGlow.ttf");
+    font-family: NeonGlow;
+}
+
+@font-face {
+    src: url("../fonts/NeonLite.ttf");
+    font-family: NeonLite;
+}
+
+@font-face {
+    src: url("../fonts/Neonscript.ttf");
+    font-family: Neonscript;
+}
+
+@font-face {
+    src: url("../fonts/Neontrace.ttf");
+    font-family: Neontrace;
+}
+
+@font-face {
+    src: url("../fonts/NeoTokyo.ttf");
+    font-family: NeoTokyo;
+}
+
+@font-face {
+    src: url("../fonts/Nevada.ttf");
+    font-family: Nevada;
+}
+
+@font-face {
+    src: url("../fonts/NewCursive.ttf");
+    font-family: NewCursive;
+}
+
+@font-face {
+    src: url("../fonts/Northshore.ttf");
+    font-family: Northshore;
+}
+
+@font-face {
+    src: url("../fonts/Rocket.ttf");
+    font-family: Rocket;
+}
+
+@font-face {
+    src: url("../fonts/Royalty.ttf");
+    font-family: Royalty;
+}
+
+@font-face {
+    src: url("../fonts/SciFi.ttf");
+    font-family: SciFi;
+}
+
+@font-face {
+    src: url("../fonts/Signature.ttf");
+    font-family: Signature;
+}
+
+@font-face {
+    src: url("../fonts/Typewriter.ttf");
+    font-family: Typewriter;
+}
+
+@font-face {
+    src: url("../fonts/Vintage.ttf");
+    font-family: Vintage;
+}
+
+@font-face {
+    src: url("../fonts/Waikiki.ttf");
+    font-family: Waikiki;
+}
+
+@font-face {
+    src: url("../fonts/WildScript.ttf");
+    font-family: WildScript;
+}
+
+@font-face {
+    src: url("../fonts/RetroSignature.otf");
+    font-family: RetroSignature;
+}
+
+.RetroSignature {
+    font-family: RetroSignature !important;
+}
+
+.WildScript {
+    font-family: WildScript !important;
+}
+
+.Waikiki {
+    font-family: Waikiki !important;
+}
+
+.Vintage {
+    font-family: Vintage !important;
+}
+
+.Typewriter {
+    font-family: Typewriter !important;
+}
+
+.Signature {
+    font-family: Signature !important;
+}
+
+.SciFi {
+    font-family: SciFi !important;
+}
+
+.Royalty {
+    font-family: Royalty !important;
+}
+
+.Rocket {
+    font-family: Rocket !important;
+}
+
+.Northshore {
+    font-family: Northshore !important;
+}
+
+.NewCursive {
+    font-family: NewCursive !important;
+}
+
+.Nevada {
+    font-family: Nevada !important;
+}
+
+.NeoTokyo {
+    font-family: NeoTokyo !important;
+}
+
+.Neontrace {
+    font-family: Neontrace !important;
+}
+
+.Neonscript {
+    font-family: Neonscript !important;
+}
+
+.NeonLite {
+    font-family: NeonLite !important;
+}
+
+.NeonGlow {
+    font-family: NeonGlow !important;
+}
+
+.Monaco {
+    font-family: Monaco !important;
+}
+
+.Melbourne {
+    font-family: Melbourne !important;
+}
+
+.Mayfair {
+    font-family: Mayfair !important;
+}
+
+.Marquee {
+    font-family: Marquee !important;
+}
+
+.LoveNote {
+    font-family: LoveNote !important;
+}
+
+.LoveNeon {
+    font-family: LoveNeon !important;
+}
+
+.Hamillton {
+    font-family: Hamillton !important;
+}
+
+.Greenworld {
+    font-family: Greenworld !important;
+}
+
+.Freespirit {
+    font-family: Freespirit !important;
+}
+
+.Freehand {
+    font-family: Freehand !important;
+}
+
+.ClassicType {
+    font-family: ClassicType !important;
+}
+
+.Chelsea {
+    font-family: Chelsea !important;
+}
+
+.Buttercup {
+    font-family: Buttercup !important;
+}
+
+.Beachfront {
+    font-family: Beachfront !important;
+}
+
+.Bayview {
+    font-family: Bayview !important;
+}
+
+.Barcelona {
+    font-family: Barcelona !important;
+}
+
+.Avante {
+    font-family: Avante !important;
+}
+
+.Austin {
+    font-family: Austin !important;
+}
+
+.Amsterdam {
+    font-family: Amsterdam !important;
+}
+
+.Amanda {
+    font-family: Amanda !important;
+}
+
+.Alexa {
+    font-family: Alexa !important;
+}
+
+.robotoBold {
+    font-family: robotoBold !important;
+}
+
+.robotoLight {
+    font-family: robotoLight !important;
+}
+
+.robotoMedium {
+    font-family: robotoMedium !important;
+}
+
+.robotoRegular {
+    font-family: robotoRegular !important;
+}
+
+.cl-F34EFF {
+    color: #f34eff !important;
+}
+
+.f-15 {
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #3a353a;
+}
+
+.f-19-tabs {
+    font-size: 19px;
+    color: #606060 !important;
+}
+
+.f-16-btn {
+    font-size: 16px;
+    color: #606060 !important;
+}
+
+.f-18 {
+    font-size: 18px;
+    color: #606060 !important;
+}
+
+.f-16 {
+    font-size: 16px;
+    color: #606060 !important;
+}
+
+.f-17-icon {
+    font-size: 17px;
+}
+
+.f-32 {
+    font-size: 32px;
+}
+
+.btns-tabs {
+    display: flex;
+    justify-content: space-between;
+}
+.main-padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.nav-link-tabs {
+    display: block;
+    padding: 0.3rem 1rem !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nav-link-btns {
+    display: block !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.form-control:focus {
+    border: 1px solid #ced4da !important;
+    box-shadow: none !important;
+}
+
+.button-color {
+    padding: 5px 8px;
+    background-color: #606060;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0PX !important;
+}
+.w-50{
+    width: 50%;
+}
+.font-btn {
+    /* padding: 8px 10px; */
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.accessary-btn {
+    padding: 8px 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.disturb-font {
+    font-size: 13px !important;
+}
+
+.box-shadow-font {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+}
+.main-div-shadow {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+}
+.rounded {
+    border-radius: 5px !important;
+}
+.right-div-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.top-btns button {
+    border: none;
+    font-size: 15px;
+    background-color: #f34eff;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+.padd-t {
+    padding-top: 20px;
+}
+.ml-3{
+    margin-left: 15px;
+}
+.align-btns {
+    font-size: 15px;
+    min-width: 170px;
+    padding-top: 20px;
+}
+.d-flex {
+    display: flex;
+}
+.border-right{
+    border-right:1px solid lightgray;
+}
+.color-selection {
+    height: 50px;
+    width: 8px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+        rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+        rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 5px;
+    transform: rotate(-20deg);
+    cursor: pointer;
+}
+
+.bordr-white {
+    border: 1px solid white;
+}
+
+.bg-F34EFF {
+    background-color: #f34eff;
+    color: white !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.controls-text {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+}
+
+.left-tab {
+    float: left;
+}
+
+.right-tab {
+    float: right;
+    margin-right: -10px;
+}
+.display-1 {
+    font-size: 7rem !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+}
+.pb-3 {
+    padding-bottom: 1rem;
+}
+.option-title {
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+#text-options,
+#font-options {
+    padding: 5px;
+}
+
+#BackingSize {
+    background-color: #fff;
+    color: #000;
+}
+
+.option-box {
+    float: left;
+    width: 100%;
+    padding-left: 5px;
+    /* border: solid 1px #999; */
+    border-radius: 5px;
+}
+.bg-white{
+    background-color: #fff !important;
+}
+
+.option-box a {
+    color: #000;
+    width: 15%;
+    height: 34px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color-selection {
+    height: 50px;
+    width: 8px;
+    box-shadow: rgb(0 0 0 / 7%) 0px 1px 2px, rgb(0 0 0 / 7%) 0px 2px 4px, rgb(0 0 0 / 7%) 0px 4px 8px, rgb(0 0 0 / 7%) 0px 8px 16px, rgb(0 0 0 / 7%) 0px 16px 32px, rgb(0 0 0 / 7%) 0px 32px 64px;
+    border-radius: 5px;
+    transform: rotate(
+-20deg
+);
+    cursor: pointer;
+}
+.option-box a span {
+    font-size: 22px;
+    /* font-weight: bold; */
+}
+
+.option-box a:hover {
+    color: #000;
+    background-color: #bbb;
+}
+
+.active {
+    background-color: #F34EFF !important;
+    color: #fff !important;
+}
+/* .active {
+    background-color: #F34EFF;
+    color: white !important;
+} */
+
+/* #textAlignOption button {
+    background-color: #fff;
+} */
+
+#backingColorOption a {
+    width: 29%;
+}
+
+#backingShapeOption a {
+    width: 29%;
+}
+
+.font-a1 {
+    font-family: Font-A1;
+}
+
+.font-a2 {
+    font-family: Font-A2;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currentlynot supported by any browser */
+}
+
+.a {
+    font-size: 25px;
+}
+/**** Blink ****/
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    color: #dd4814;
+    animation: blink 1s linear infinite;
+    -webkit-animation: blink 1s linear infinite;
+}
+/**** Blink ****/
+#color-options {
+    background-color: #000;
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+    padding-bottom: 10px;
+}
+
+#color-options a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#color-options a:focus,
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#color-options a span {
+    font-size: 12px;
+}
+
+.signInfo {
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    background: #666;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.light-yellow {
+    color: #faeb08 !important;
+}
+
+a:hover.light-yellow,
+.light-yellow-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #faeb08, 0 0 10px #faeb08, 0 0 15px #faeb08,
+        0 0 20px #faeb08, 0 0 35px #faeb08, 0 0 40px #faeb08, 0 0 50px #faeb08,
+        0 0 75px #faeb08;
+}
+
+.yellow {
+    color: #faeb08 !important;
+}
+
+a:hover.yellow,
+.yellow-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #faeb08, 0 0 10px #faeb08, 0 0 15px #faeb08,
+        0 0 20px #faeb08, 0 0 35px #faeb08, 0 0 40px #faeb08, 0 0 50px #faeb08,
+        0 0 75px #faeb08;
+}
+
+.orange {
+    color: #ffa101 !important;
+}
+
+a:hover.orange,
+.orange-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #ffa101, 0 0 10px #ffa101, 0 0 15px #ffa101,
+        0 0 20px #ffa101, 0 0 35px #ffa101, 0 0 40px #ffa101, 0 0 50px #ffa101,
+        0 0 75px #ffa101;
+}
+
+.red {
+    color: #f4051c !important;
+}
+
+a:hover.red,
+.red-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #f4051c, 0 0 10px #f4051c, 0 0 15px #f4051c,
+        0 0 20px #f4051c, 0 0 35px #f4051c, 0 0 40px #f4051c, 0 0 50px #f4051c,
+        0 0 75px #f4051c;
+}
+
+.sky-blue {
+    color: #01b7ff !important;
+}
+
+a:hover.sky-blue,
+.sky-blue-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #01b7ff, 0 0 10px #01b7ff, 0 0 15px #01b7ff,
+        0 0 20px #01b7ff, 0 0 35px #01b7ff, 0 0 40px #01b7ff, 0 0 50px #01b7ff,
+        0 0 75px #01b7ff;
+}
+
+.dark-blue {
+    color: #0002f3 !important;
+}
+
+a:hover.dark-blue,
+.dark-blue-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #0002f3, 0 0 10px #0002f3, 0 0 15px #0002f3,
+        0 0 20px #0002f3, 0 0 35px #0002f3, 0 0 40px #0002f3, 0 0 50px #0002f3,
+        0 0 75px #0002f3;
+}
+
+.ice-blue {
+    color: #02e0e3 !important;
+}
+
+a:hover.ice-blue,
+.ice-blue-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #02e0e3, 0 0 10px #02e0e3, 0 0 15px #02e0e3,
+        0 0 20px #02e0e3, 0 0 35px #02e0e3, 0 0 40px #02e0e3, 0 0 50px #02e0e3,
+        0 0 75px #02e0e3;
+}
+
+.green {
+    color: #08e94f !important;
+}
+
+a:hover.green,
+.green-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #08e94f, 0 0 10px #08e94f, 0 0 15px #08e94f,
+        0 0 20px #08e94f, 0 0 35px #08e94f, 0 0 40px #08e94f, 0 0 50px #08e94f,
+        0 0 75px #08e94f;
+}
+
+.light-pink {
+    color: #ce8098 !important;
+}
+
+a:hover.light-pink,
+.light-pink-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #ce8098, 0 0 10px #ce8098, 0 0 15px #ce8098,
+        0 0 20px #ce8098, 0 0 35px #ce8098, 0 0 40px #ce8098, 0 0 50px #ce8098,
+        0 0 75px #ce8098;
+}
+
+.hot-pink {
+    color: #fd0192 !important;
+}
+
+a:hover.hot-pink,
+.hot-pink-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #fd0192, 0 0 10px #fd0192, 0 0 15px #fd0192,
+        0 0 20px #fd0192, 0 0 35px #fd0192, 0 0 40px #fd0192, 0 0 50px #fd0192,
+        0 0 75px #fd0192;
+}
+
+.purple {
+    color: #a301e0 !important;
+}
+
+a:hover.purple,
+.purple-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #a301e0, 0 0 10px #a301e0, 0 0 15px #a301e0,
+        0 0 20px #a301e0, 0 0 35px #a301e0, 0 0 40px #a301e0, 0 0 50px #a301e0,
+        0 0 75px #a301e0;
+}
+
+.super-cold-white {
+    color: #fff !important;
+    text-shadow: 0 0 2px #22fbf2;
+}
+
+a:hover.super-cold-white,
+.super-cold-white-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #22fbf2, 0 0 10px #22fbf2, 0 0 15px #22fbf2,
+        0 0 20px #22fbf2, 0 0 35px #22fbf2, 0 0 40px #22fbf2, 0 0 50px #22fbf2,
+        0 0 75px #22fbf2;
+}
+
+.cold-white {
+    color: #fff !important;
+    text-shadow: 0 0 2px #fff;
+}
+
+a:hover.cold-white,
+.cold-white-on {
+    color: #fff !important;
+    text-shadow: 0 0 1px #000, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
+        0 0 35px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 75px #fff;
+}
+
+.white {
+    color: #fff !important;
+    text-shadow: 0 0 2px #fffef5;
+}
+
+a:hover.white,
+.white-on {
+    color: #fffef5;
+    text-shadow: 0 0 1px #000, 0 0 10px #fffef5, 0 0 15px #fffef5,
+        0 0 20px #fffef5, 0 0 35px #fffef5, 0 0 40px #fffef5, 0 0 50px #fffef5,
+        0 0 75px #fffef5;
+}
+
+.warm-white {
+    color: #fff !important;
+    text-shadow: 0 0 2px #fff2b9;
+}
+
+a:hover.warm-white,
+.warm-white-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #666, 0 0 10px #fff2b9, 0 0 15px #fff2b9,
+        0 0 20px #fff2b9, 0 0 35px #fff2b9, 0 0 40px #fff2b9, 0 0 50px #fff2b9,
+        0 0 75px #fff2b9;
+}
+
+.yellow-white {
+    color: #fff !important;
+    text-shadow: 0 0 2px #fbe303;
+}
+
+a:hover.yellow-white,
+.yellow-white-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #fbe303, 0 0 10px #fbe303, 0 0 15px #fbe303,
+        0 0 20px #fbe303, 0 0 35px #fbe303, 0 0 40px #fbe303, 0 0 50px #fbe303,
+        0 0 75px #fbe303;
+}
+
+.orange-white {
+    color: #fff !important;
+}
+
+a:hover.orange-white,
+.orange-white-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #ffa101, 0 0 10px #ffa101, 0 0 15px #ffa101,
+        0 0 20px #ffa101, 0 0 35px #ffa101, 0 0 40px #ffa101, 0 0 50px #ffa101,
+        0 0 75px #ffa101;
+}
+
+.red-white {
+    color: #fff !important;
+    text-shadow: 0 0 2px #f91e6e;
+}
+
+a:hover.red-white,
+.red-white-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #f91e6e, 0 0 10px #f91e6e, 0 0 15px #f91e6e,
+        0 0 20px #f91e6e, 0 0 35px #f91e6e, 0 0 40px #f91e6e, 0 0 50px #f91e6e,
+        0 0 75px #f91e6e;
+}
+
+.blue-white {
+    color: #fff !important;
+    text-shadow: 0 0 2px #296df6;
+}
+
+a:hover.blue-white,
+.blue-white-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #296df6, 0 0 10px #296df6, 0 0 15px #296df6,
+        0 0 20px #296df6, 0 0 35px #296df6, 0 0 40px #296df6, 0 0 50px #296df6,
+        0 0 75px #296df6;
+}
+
+.green-white {
+    color: #fff !important;
+    text-shadow: 0 0 2px #01e470;
+}
+
+a:hover.green-white,
+.green-white-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #01e470, 0 0 10px #01e470, 0 0 15px #01e470,
+        0 0 20px #01e470, 0 0 35px #01e470, 0 0 40px #01e470, 0 0 50px #01e470,
+        0 0 75px #01e470;
+}
+
+.pink-white {
+    color: #fff !important;
+    text-shadow: 0 0 2px #e79b9d;
+}
+
+a:hover.pink-white,
+.pink-white-on {
+    color: #fff;
+    text-shadow: 0 0 2px #e79b9d, 0 0 10px #e79b9d, 0 0 15px #e79b9d,
+        0 0 20px #e79b9d, 0 0 35px #e79b9d, 0 0 40px #e79b9d, 0 0 50px #e79b9d,
+        0 0 75px #e79b9d;
+}
+
+.hot-pink-white {
+    color: #fff !important;
+    text-shadow: 0 0 2px #f621dd;
+}
+
+a:hover.hot-pink-white,
+.hot-pink-white-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #f621dd, 0 0 10px #f621dd, 0 0 15px #f621dd,
+        0 0 20px #f621dd, 0 0 35px #f621dd, 0 0 40px #f621dd, 0 0 50px #f621dd,
+        0 0 75px #f621dd;
+}
+
+.purple-white {
+    color: #fff !important;
+    text-shadow: 0 0 2px #b65cfc;
+}
+
+a:hover.purple-white,
+.purple-white-on {
+    color: #fff !important;
+    text-shadow: 0 0 2px #b65cfc, 0 0 10px #b65cfc, 0 0 15px #b65cfc,
+        0 0 20px #b65cfc, 0 0 35px #b65cfc, 0 0 40px #b65cfc, 0 0 50px #b65cfc,
+        0 0 75px #b65cfc;
+}
+
+@media screen and (min-width: 321px) and (max-width: 990px) {
+    #sence {
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    #sence {
+        height: 700px;
+    }
+}

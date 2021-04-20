@@ -1,0 +1,262 @@
+body {
+    background-image: url("../img/bg-img.png");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.noenText1,
+.noenText2,
+.noenText3 {
+    font-size: 2em;
+    width: auto;
+    height: auto;
+    color: #fff;
+    padding: 10px 12px;
+    cursor: pointer;
+    position: relative;
+    line-height: 80px;
+    cursor: move;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.z-index-3 {
+    z-index: 3;
+}
+
+.img-tab-shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+/* div#mockup1.mockup {
+    position: absolute;
+    left: 40%;
+    top: 150px;
+    cursor: move;
+}
+#.noenText3nbacking1{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-family: font-13;
+    display: block;
+    width: fit-content;
+}
+#noenText1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: font-13;
+    display: block;
+    width: fit-content;
+} */
+
+.text-shadow {
+    text-shadow: #fff 0 0 5px, #fff 0 0 10px, #8c59ff 0 0 20px, #8c59ff 0 0 30px, #8c59ff 0 0 40px, #8c59ff 0 0 55px, #8c59ff 0 0 75px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+    position: relative;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Container for image text */
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Six columns side by side */
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.activeFont {
+    background-color: #f34eff;
+    color: white !important;
+}
+
+.activeAccessary {
+    background-color: #f34eff;
+    color: white !important;
+}
+
+li>a.active {
+    color: white !important;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.main-img {
+    width: 100% !important;
+}
+
+.h-700 {
+    height: 650px;
+}
+
+.top-tabs {
+    font-size: 16px;
+}
+
+.blink_text {
+    border: 1px solid #f20707;
+    width: fit-content;
+    color: #f20707;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px;
+    font-size: 17px;
+}
+
+.display-1 {
+    font-size: 4rem;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+}
+
+.wrapper-secleted-output {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background: #666;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1111111111;
+    width: 30%;
+}
+
+.text-overflow {
+    overflow: hidden;
+}
+
+.blinker {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink_text-Inner {
+    font-size: 15px;
+}
+
+.blink {
+    color: #dd4814;
+}
+
+.cl-606060 {
+    color: #606060;
+}
+
+
+/* @media only screen and (max-width: 1600px) {
+    #lineTab {
+        flex-wrap: nowrap;
+    }
+    .nav-link-tabs {
+        font-size: 16px !important;
+    }
+} */
