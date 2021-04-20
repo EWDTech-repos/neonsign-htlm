@@ -105,13 +105,14 @@
                             </div>
                             <div class="wrapper-secleted-output">
                                 <div class="d-flex align-items-center">
-                                    <div class="blink_text cursor-pointer bg-white">
+                                    <div class="blink_text cursor-pointer bg-white" id="copy-html" onclick=" myFunction();">
                                         <div class="blinker">Click here to order on Etsy</div>
                                     </div>
                                 </div>
+                                <textarea id="copy_content" style="width: 0px; height: 0px; z-index: -10;opacity: 0;"></textarea>
 
-                                <div class="d-flex justify-content-between block-font flex-wrap">
-                                    <div class="w-100 w-sm-50 w-md-50 w-lg-50">
+                                <div class="d-flex justify-content-between block-font flex-wrap" id="copyText">
+                                    <div class="w-100 w-sm-50 w-md-50 w-lg-50 copy-html">
                                         <div class="cl-606060 f-22 text-white text-overflow">
                                             <span class="robotoMedium">Text:</span>
                                             <span class="pl-1 robotoRegular" id="finaltext"><span id="lineonefinaltext"></span><span id="linetwofinaltext"></span><span id="linethreefineltext"></span></span>
@@ -122,7 +123,7 @@
                                         </div>
                                         <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Deliver</span><span class="pl-1 robotoRegular">4-19-2021;</span></div>
                                     </div>
-                                    <div class="w-100 w-sm-50 w-md-50 w-lg-50">
+                                    <div class="w-100 w-sm-50 w-md-50 w-lg-50 copy-html">
                                         <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Font:</span><span id="finalfont" class="pl-1 robotoRegular"></span></div>
                                         <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Color:</span><span class="pl-1 robotoRegular color-name">Light-Yellow;</span></div>
                                         <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Install:</span><span class="pl-1 robotoRegular install-text">Screws, </span></div>
@@ -216,15 +217,15 @@
 
                                         <!-- There is text alignment buttons -->
                                         <!-- <div class="d-flex "> -->
-                                            <div class="button-color cursor-pointer" onclick="textAlign('left')">
-                                                <i class="fa fa-caret-left f-17-icon" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="button-color cursor-pointer" onclick="textAlign('center')">
-                                                <i class="fa fa-bars f-17-icon" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="button-color cursor-pointer" onclick="textAlign('right')">
-                                                <i class="fa fa-caret-right f-17-icon" aria-hidden="true"></i>
-                                            </div>
+                                        <div class="button-color cursor-pointer" onclick="textAlign('left')">
+                                            <i class="fa fa-caret-left f-17-icon" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="button-color cursor-pointer" onclick="textAlign('center')">
+                                            <i class="fa fa-bars f-17-icon" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="button-color cursor-pointer" onclick="textAlign('right')">
+                                            <i class="fa fa-caret-right f-17-icon" aria-hidden="true"></i>
+                                        </div>
                                         <!-- </div> -->
                                         <!-- There is text alignment buttons -->
 
@@ -522,6 +523,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script>
+        function myFunction() {
+            $('#copy_content').val($('#copyText').text().replace(/\s/g, ""));
+            var copyText = document.getElementById("copy_content");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert('Custom detail has been copied, just paste to personalisation when order on etsy.')
+            window.location = "https://www.etsy.com/listing/711074384/diy-design-quote-custom-neon-sign-name?variation0=1679094965";
+
+        }
+
         function partialCode(id) {
             let cls = $("." + id).attr("data-class");
             $.each($(".font-div"), function() {
