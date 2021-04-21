@@ -21,7 +21,8 @@ $(document).ready(function() {
     if (location.protocol !== "https:" || location.protocol === "www") {
         location.protocol = "https:";
     }
-
+    console.log(document.location.protocol);
+    console.log(window.location.protocol);
     /************* Choose backing color*************/
     $("#backingColorOption li a").click(function() {
         if (!$(this).hasClass("bg-F34EFF")) {
