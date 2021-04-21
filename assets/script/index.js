@@ -84,6 +84,13 @@ function setFont(font, type, font_li) {
 
 }
 
+function getDeliverDate(day) {
+
+    var deliverDate = new Date();
+    deliverDate.setDate(deliverDate.getDate() + day);
+    $('.deiverDate').html(deliverDate.getMonth() + 1 + "-" + deliverDate.getDate() + "-" + deliverDate.getFullYear() + " (or earlier)");
+}
+
 function getFontSize() {
 
     var currentSize = $(noenText).css("font-size");
@@ -203,12 +210,7 @@ function get_obj_width(noOfLines, textOBJ, fHeightVar) {
     return finalWidth;
 }
 
-function getDeliverDate(day) {
 
-    var deliverDate = new Date();
-    deliverDate.setDate(deliverDate.getDate() + day);
-    $('.deiverDate').html(deliverDate.getMonth() + 1 + "-" + deliverDate.getDate() + "-" + deliverDate.getFullYear());
-}
 
 function selectLineColumn(obj) {
 
