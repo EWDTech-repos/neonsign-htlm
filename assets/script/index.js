@@ -247,7 +247,7 @@ function selectLineColumn(obj) {
         // console.log($(noenText).html().length, $(noenText2).html().length);
 
         cost_calcultor($(noenText), $(noenText2))
-        $("#linethreefineltext").html("," + $("#three_text_3").val()).hide();
+            // $("#linethreefineltext").html("," + $("#three_text_3").val()).hide();
 
     } else {
         noenText2 = '.noenText2';
@@ -261,8 +261,8 @@ function selectLineColumn(obj) {
         no_ch = $(noenText).html().length;
 
         cost_calcultor($(noenText))
-        $("#linetwofinaltext").html("," + $("#two_text_2").val()).hide();
-        $("#linethreefineltext").html("," + $("#three_text_3").val()).hide();
+            // $("#linetwofinaltext").html("," + $("#two_text_2").val()).hide();
+            // $("#linethreefineltext").html("," + $("#three_text_3").val()).hide();
     }
 
 }
