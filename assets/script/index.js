@@ -170,17 +170,17 @@ function cost_calcultor(nText1, nText2, nText3) {
 
     var fontHeightVar = sizeIncreament;
     var finalHeight = nText1 != null && nText2 == null && nText3 == null ? parseInt(nText1.attr("data-height")) + fontHeightVar : nText1 != null && nText2 != null && nText3 == null ? ((parseInt(nText1.attr("data-height")) + fontHeightVar) + (parseInt(nText2.attr("data-height")) + fontHeightVar)) : ((parseInt(nText1.attr("data-height")) + fontHeightVar) + (parseInt(nText2.attr("data-height")) + fontHeightVar) + (parseInt(nText3.attr("data-height")) + fontHeightVar));
-    var noOfLines = nText1 != null && nText2 == null && nText3 == null ? 1 : nText1 != null && nText2 != null && nText3 == null ? 2 : 3;
+    // var noOfLines = nText1 != null && nText2 == null && nText3 == null ? 1 : nText1 != null && nText2 != null && nText3 == null ? 2 : 3;
     if (nText2 != null) {
 
-        var textOBJ = get_obj_width(noOfLines, nText1, fontHeightVar) > get_obj_width(noOfLines, nText2, fontHeightVar) && nText3 == null ? nText1 : (nText3 != null && (get_obj_width(noOfLines, nText3, fontHeightVar) > get_obj_width(noOfLines, nText2, fontHeightVar)) && (get_obj_width(noOfLines, nText3, fontHeightVar) > get_obj_width(noOfLines, nText1, fontHeightVar))) ? nText3 : (nText3 != null && (get_obj_width(noOfLines, nText1, fontHeightVar) > get_obj_width(noOfLines, nText2)) && (get_obj_width(noOfLines, nText1, fontHeightVar) > get_obj_width(noOfLines, nText3, fontHeightVar))) ? nText1 : nText2;
+        var textOBJ = get_obj_width(nText1, fontHeightVar) > get_obj_width(nText2, fontHeightVar) && nText3 == null ? nText1 : (nText3 != null && (get_obj_width(nText3, fontHeightVar) > get_obj_width(nText2, fontHeightVar)) && (get_obj_width(nText3, fontHeightVar) > get_obj_width(nText1, fontHeightVar))) ? nText3 : (nText3 != null && (get_obj_width(nText1, fontHeightVar) > get_obj_width(nText2, fontHeightVar)) && (get_obj_width(nText1, fontHeightVar) > get_obj_width(nText3, fontHeightVar))) ? nText1 : nText2;
     } else
         var textOBJ = nText1;
 
     finalHeight += get_height(textOBJ, fontHeightVar);
-
-    finalWidth = get_obj_width(noOfLines, textOBJ, fontHeightVar);
-
+    // console.log(noOfLines + " no of lines " + textOBJ.html() + " font height  " + fontHeightVar);
+    finalWidth = get_obj_width(textOBJ, fontHeightVar);
+    console.log(finalWidth + "  x  " + finalHeight);
     sq = Math.sqrt(finalWidth * (finalHeight));
     if (textOBJ.attr('data-class') == 'SciFi' || textOBJ.attr('data-class') == 'Nevada' || textOBJ.attr('data-class') == 'LoveNeon' || textOBJ.attr('data-class') == 'Marquee' || textOBJ.attr('data-class') == 'NeonGlow' || textOBJ.attr('data-class') == 'Mayfair')
         manufacture_cost = sq * 4.75 * 2;
@@ -200,7 +200,8 @@ function get_height(inputOBJ, fHeightVar) {
     return (fontHeight * noOfLines);
 }
 
-function get_obj_width(noOfLines, textOBJ, fHeightVar) {
+function get_obj_width(textOBJ, fHeightVar) {
+    noOfLines = 1;
     nChar = textOBJ.html().length;
     aspectRatio = parseFloat(textOBJ.attr('data-aspect_ratio'));
     noOfLines = (textOBJ.html().match(/<br>/g) || []).length > 0 ? (textOBJ.html().match(/<br>/g) || []).length + noOfLines : noOfLines + 0;
