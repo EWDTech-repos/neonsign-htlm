@@ -121,7 +121,7 @@
                                         <div class="cl-606060 f-22 text-white">
                                             <span class="robotoMedium">Backing:</span><span class="pl-1 robotoRegular"><span class="backing-color-text"> Clear Acrylic</span>,<span class="backing-shape-text"> Text Shape</span>;</span>
                                         </div>
-                                        <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Deliver</span><span class="pl-1 robotoRegular">4-19-2021;</span></div>
+                                        <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Deliver</span><span class="pl-1 robotoRegular deiverDate">4-19-2021;</span></div>
                                     </div>
                                     <div class="w-100 w-sm-50 w-md-50 w-lg-50 copy-html">
                                         <div class="cl-606060 f-22 text-white"><span class="robotoMedium">Font:</span><span id="finalfont" class="pl-1 robotoRegular"></span></div>
@@ -499,7 +499,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-lg-4 col-sm-4 col-5 text-center p-1">
-                                        <div class="accessary-btn border rounded common-btn3" onclick="commonBtnFun3(this)">
+                                        <div class="accessary-btn border rounded common-btn3 rush-order" onclick="commonBtnFun3(this)">
                                             <div class="blink_text border-0 p-0 cursor-pointer">
                                                 <div class="blinker">Rush-My-order-<span class="blink_text-Inner">(5x Faster)</span></div>
                                             </div>
@@ -587,6 +587,7 @@
                 $(noenText).removeClass(font_class);
             });
             $(noenText).addClass($(e).data("class"));
+            $(noenText).css('font-size', $(e).data("desk") + "px")
             $(noenText).attr("data-class", $(e).data("class"));
             $(noenText).attr("data-height", $(e).data("height"));
             $(noenText).attr("data-aspect_ratio", $(e).data("aspect_ratio"));
@@ -653,13 +654,21 @@
             var final_price, total_price, install;
             total_price = parseFloat($('.price').html())
             if ($(e).hasClass("bg-F34EFF")) {
-                if ($('div.bg-F34EFF').length != 1)
-                    final_price = total_price - 10
+                if ($('div.bg-F34EFF').length != 1 && !$(e).hasClass('rush-order'))
+                    final_price = total_price - 10;
+                else if ($(e).hasClass('rush-order')) {
+                    final_price = total_price - 50;
+                    getDeliverDate(21);
+                }
                 $(e).removeClass("bg-F34EFF ");
 
             } else {
-                if ($('div.bg-F34EFF').length != 0)
+                if ($('div.bg-F34EFF').length != 0 && !$(e).hasClass('rush-order'))
                     final_price = total_price + 10;
+                else if ($(e).hasClass('rush-order')) {
+                    final_price = total_price + 50;
+                    getDeliverDate(14)
+                }
                 $(e).addClass("bg-F34EFF");
             }
             install = $("div.bg-F34EFF").text();
@@ -732,5 +741,7 @@
     </script>
 
 </body>
+
+</html>
 
 </html>

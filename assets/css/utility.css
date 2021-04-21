@@ -423,6 +423,7 @@ a {
     color: #606060 !important;
 }
 
+
 /* .f-17-icon {
     font-size: 17px;
 } */
@@ -430,9 +431,11 @@ a {
 .f-32 {
     font-size: 32px;
 }
-.f-22{
+
+.f-22 {
     font-size: 14px;
 }
+
 .main-padding {
     padding-left: 25px;
     padding-right: 25px;

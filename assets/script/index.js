@@ -5,6 +5,7 @@ var lineTab = "#lineTab";
 $(document).ready(function() {
     setFont('Alexa', 2, ".Alexa");
     selectLineColumn(lineTab + " li:first-child");
+    getDeliverDate(21)
     $('.font-btn').click(function() {
         var font = $(this).attr('class').split(' ').pop();
         setFont(font, 2, this);
@@ -16,6 +17,8 @@ $(document).ready(function() {
         $(noenText).css('color', color);
 
     });
+
+
 
     /************* Choose backing color*************/
     $("#backingColorOption li a").click(function() {
@@ -159,7 +162,7 @@ function setLineHeight(lineHeight) {
 function cost_calcultor(nText1, nText2, nText3) {
 
     var fontHeightVar = sizeIncreament;
-    var finalHeight = nText1 != null && nText2 == null && nText3 == null ? parseInt(nText1.attr("data-height")) : nText1 != null && nText2 != null && nText3 == null ? (parseInt(nText1.attr("data-height")) + parseInt(nText2.attr("data-height"))) : (parseInt(nText1.attr("data-height")) + parseInt(nText2.attr("data-height")) + parseInt(nText3.attr("data-height")));
+    var finalHeight = nText1 != null && nText2 == null && nText3 == null ? parseInt(nText1.attr("data-height")) + fontHeightVar : nText1 != null && nText2 != null && nText3 == null ? ((parseInt(nText1.attr("data-height")) + fontHeightVar) + (parseInt(nText2.attr("data-height")) + fontHeightVar)) : ((parseInt(nText1.attr("data-height")) + fontHeightVar) + (parseInt(nText2.attr("data-height")) + fontHeightVar) + (parseInt(nText3.attr("data-height")) + fontHeightVar));
     var noOfLines = nText1 != null && nText2 == null && nText3 == null ? 1 : nText1 != null && nText2 != null && nText3 == null ? 2 : 3;
     if (nText2 != null) {
 
@@ -193,10 +196,18 @@ function get_height(inputOBJ, fHeightVar) {
 function get_obj_width(noOfLines, textOBJ, fHeightVar) {
     nChar = textOBJ.html().length;
     aspectRatio = parseFloat(textOBJ.attr('data-aspect_ratio'));
+    noOfLines = (textOBJ.html().match(/<br>/g) || []).length > 0 ? (textOBJ.html().match(/<br>/g) || []).length + noOfLines : noOfLines + 0;
     height = parseInt(textOBJ.attr("data-height")) + fHeightVar;
 
     finalWidth = ((height / noOfLines) / aspectRatio) * nChar;
     return finalWidth;
+}
+
+function getDeliverDate(day) {
+
+    var deliverDate = new Date();
+    deliverDate.setDate(deliverDate.getDate() + day);
+    $('.deiverDate').html(deliverDate.getMonth() + 1 + "-" + deliverDate.getDate() + "-" + deliverDate.getFullYear());
 }
 
 function selectLineColumn(obj) {
