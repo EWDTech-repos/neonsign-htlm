@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     });
 
-    if (location.protocol !== "https:") {
+    if (location.protocol !== "https:" || location.protocol === "www.") {
         location.protocol = "https:";
     }
 
