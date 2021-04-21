@@ -18,8 +18,7 @@ $(document).ready(function() {
 
     });
 
-    console.log(document.location.protocol);
-    console.log(window.location.protocol);
+
     if (location.protocol !== "https:" || location.protocol === "www") {
         location.protocol = "https:";
     }
@@ -353,3 +352,228 @@ function showSlides(n) {
 
 
 }
+
+
+
+
+
+
+// custome
+
+
+
+function myFunction() {
+    $('#copy_content').val($('#copyText').text().replace(/\s/g, ""));
+    var copyText = document.getElementById("copy_content");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    alert('Custom detail has been copied, just paste to personalisation when order on etsy.')
+    window.location = "https://www.etsy.com/listing/711074384/diy-design-quote-custom-neon-sign-name?variation0=1679094965";
+
+}
+
+function partialCode(id) {
+    let cls = $("." + id).attr("data-class");
+    $.each($(".font-div"), function() {
+        $(this).removeClass("activeFont");
+        if ($(this).hasClass(cls)) {
+            $(this).addClass("activeFont");
+        }
+    });
+}
+
+function onFocusFun(id, id2) {
+    noenText = "." + id;
+    //  <
+    // !--$('#input-text-id').val('#' + id);
+    // -- >
+    partialCode(id);
+    $("#input-font-id").val("#" + id2);
+}
+
+function tabClick(txt) {
+    $("#input-font-id").val("#" + txt + "_text_1");
+}
+
+function onClickFun(id, count) {
+    noenText = "." + id;
+    // <
+    // !--$('#input-text-id').val('#' + id);
+    // -- >
+    partialCode(id);
+    $.each($(".nav-link-tabs"), function() {
+        if ($(this).hasClass("active")) {
+            $("#input-font-id").val("#" + $(this).data("tab") + "_text_" + count);
+        }
+    });
+
+    var tube_class = $(noenText).attr("data-color");
+    $.each($(".color-selection"), function() {
+        $(this).removeClass(tube_class + "-on");
+        $(this).removeClass($(this).data("class") + "-on");
+        $(this).addClass($(this).data("class"));
+
+        if ($(this).data("class") == tube_class) {
+            $(this).addClass(tube_class + "-on");
+        }
+    });
+}
+
+function getClass(e) {
+    $.each($(".font-div"), function() {
+        let font_class = $(this).data("class");
+        $(noenText).removeClass(font_class);
+    });
+    $(noenText).addClass($(e).data("class"));
+    $(noenText).css('font-size', $(e).data("desk") + "px")
+    $(noenText).attr("data-class", $(e).data("class"));
+    $(noenText).attr("data-height", $(e).data("height"));
+    $(noenText).attr("data-aspect_ratio", $(e).data("aspect_ratio"));
+
+    noenText1 = '.noenText1'
+    noenText2 = '.noenText2'
+    noenText3 = '.noenText3'
+
+    if ($('li.active').hasClass('one'))
+        cost_calcultor($(noenText1));
+    else if ($('li.active').hasClass('two'))
+        cost_calcultor($(noenText1), $(noenText2));
+    else if ($('li.active').hasClass('three'))
+        cost_calcultor($(noenText1), $(noenText2), $(noenText3));
+
+    // $(noenText).parent().parent().attr('onclick').click
+}
+
+setInterval(function() {
+    var i = 1;
+    $.each($(".font-div"), function() {
+        $(this).html("<span style='font-family:Arial !important;' class='top-tabs'>" + i + "</span><span>" + $($("#input-font-id").val()).val().substring(0, 4) + "</span>");
+        i++;
+    });
+    $("span.Alexa").removeClass("activeFont");
+}, 500);
+
+function changeclass(e) {
+    $tube = $(e).data("class");
+    $.each($(".color-selection"), function() {
+        let clr_class = $(this).data("class");
+        $(this).removeClass(clr_class + "-on");
+        $(this).addClass(clr_class);
+        $(noenText).removeClass(clr_class + "-text");
+    });
+    $(e).removeClass($tube);
+    $(e).addClass($tube + "-on");
+    $(".color-name").text($(e).data("name"));
+    $(noenText).addClass($tube + "-text");
+    $(noenText + "backing").removeClass($tube + "-text");
+    $(noenText).attr("data-color", $tube);
+}
+
+function backingClass(e) {
+    $.each($(".backing-li"), function() {
+        let backing_class = $(this).data("class");
+        $(".backing-text-behind").removeClass(backing_class);
+    });
+    $(".backing-color-text").text($(e).text().trim());
+    $(".backing-text-behind").addClass($(e).data("class"));
+}
+
+function backingShapeClass(e) {
+    $.each($(".backing-shape-li"), function() {
+        let backing_class = $(this).data("class");
+        // $(noenText).removeClass(backing_class);
+        $(".backing-text-behind").removeClass(backing_class);
+    });
+    $(".backing-shape-text").text($(e).text().trim());
+    $(".backing-text-behind").addClass($(e).data("class"));
+}
+
+function commonBtnFun3(e) {
+    var final_price, total_price, install;
+    total_price = parseFloat($('.price').html())
+    if ($(e).hasClass("bg-F34EFF")) {
+        if ($('div.bg-F34EFF').length != 1 && !$(e).hasClass('rush-order'))
+            final_price = total_price - 10;
+        else if ($(e).hasClass('rush-order')) {
+            final_price = total_price - 50;
+            getDeliverDate(21);
+        }
+        $(e).removeClass("bg-F34EFF ");
+
+    } else {
+        if ($('div.bg-F34EFF').length != 0 && !$(e).hasClass('rush-order'))
+            final_price = total_price + 10;
+        else if ($(e).hasClass('rush-order')) {
+            final_price = total_price + 50;
+            getDeliverDate(14)
+        }
+        $(e).addClass("bg-F34EFF");
+    }
+    install = $("div.bg-F34EFF").text();
+    install = install.replace(/\s+/g, ", ");
+    install = install.substring(1);
+    $(".install-text").text(install);
+    $('.price').html(final_price)
+}
+
+function textAlign(e) {
+    $(noenText).parent().css({
+        "text-align": e,
+    });
+}
+
+
+function mobile_tab_img(elm, img) {
+
+    $('img.' + img).click()
+}
+
+
+
+// drag
+
+
+$("div.mockup").mousedown(function(e) {
+
+    var senceDiv = $("#sence").offset();
+    var dragDiv = $(noenText)
+    var dragDivOffset = dragDiv.offset();
+    var dragDivOffsetWidth = dragDiv.outerWidth(true)
+    var dragDivOffsetHeight = dragDiv.outerHeight(true)
+    var distanceX = e.pageX - dragDivOffset.left;
+    var distanceY = e.pageY - dragDivOffset.top;
+
+    var divID = $(this).attr('id');
+    inputTextID = divID.substr(divID.length - 1, 1);
+    //updateOptions();
+
+    $(document).mousemove(function(e) {
+        var x = e.pageX - distanceX;
+        var y = e.pageY - distanceY;
+
+        if (x < senceDiv.left) {
+            x = senceDiv.left;
+        } else if (x > (senceDiv.left + $("#sence").width() - dragDivOffsetWidth)) {
+            x = senceDiv.left + $("#sence").width() - dragDivOffsetWidth;
+        }
+
+        if (y < senceDiv.top) {
+            y = senceDiv.top;
+        } else if (y > (senceDiv.top + $("#sence").height() - dragDivOffsetHeight)) {
+            y = senceDiv.top + $("#sence").height() - dragDivOffsetHeight;
+        }
+
+        $(dragDiv).css({
+            'position': 'absolute',
+            'left': x - senceDiv.left + 'px',
+            'top': y - senceDiv.top + 'px'
+        });
+    });
+
+    $(document).mouseup(function() {
+        $(document).off('mousemove');
+
+    });
+
+});
