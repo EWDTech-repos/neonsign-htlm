@@ -180,9 +180,7 @@ function cost_calcultor(nText1, nText2, nText3) {
         var textOBJ = nText1;
 
     finalHeight += get_height(textOBJ, fontHeightVar);
-    // console.log(noOfLines + " no of lines " + textOBJ.html() + " font height  " + fontHeightVar);
     finalWidth = get_obj_width(textOBJ, fontHeightVar);
-    console.log(finalWidth + "  x  " + finalHeight);
     sq = Math.sqrt(finalWidth * (finalHeight));
     if (textOBJ.attr('data-class') == 'SciFi' || textOBJ.attr('data-class') == 'Nevada' || textOBJ.attr('data-class') == 'LoveNeon' || textOBJ.attr('data-class') == 'Marquee' || textOBJ.attr('data-class') == 'NeonGlow' || textOBJ.attr('data-class') == 'Mayfair')
         manufacture_cost = sq * 4.75 * 2;
@@ -192,7 +190,7 @@ function cost_calcultor(nText1, nText2, nText3) {
     shipping_cost = (((finalWidth + 2) * ((finalHeight) + 2) * 4) * conversion) * 9.49 + 16.3;
     total_cost = (shipping_cost + manufacture_cost) * 2;
     $('.price').html(total_cost.toFixed(0))
-    $('.size').html(Math.round(finalWidth) + "x" + Math.round(finalHeight) + "inc(" + (Math.round(finalWidth) * 2.54).toFixed(0) + "x" + (Math.round(finalHeight) * 2.54).toFixed(0) + "cm)")
+    $('.size').html(Math.round(finalWidth) + "x" + Math.round(finalHeight) + "inches(" + (Math.round(finalWidth) * 2.54).toFixed(0) + "x" + (Math.round(finalHeight) * 2.54).toFixed(0) + "cm)")
 }
 
 function get_height(inputOBJ, fHeightVar) {
@@ -205,7 +203,6 @@ function get_height(inputOBJ, fHeightVar) {
 function get_obj_width(textOBJ, fHeightVar) {
     noOfLines = 1;
     var textBreak = textOBJ.html().split('<br>')
-        // console.log(textBreak);
     var textMax = '';
     for (var i = 0; i < textBreak.length; i++) {
         if (i == 0)
@@ -214,7 +211,6 @@ function get_obj_width(textOBJ, fHeightVar) {
             textMax = textBreak[i].length;
     }
     nChar = textMax;
-    console.log(nChar);
     aspectRatio = parseFloat(textOBJ.attr('data-aspect_ratio'));
     noOfLines = (textOBJ.html().match(/<br>/g) || []).length > 0 ? (textOBJ.html().match(/<br>/g) || []).length + noOfLines : noOfLines + 0;
     if (noOfLines > 1)
@@ -320,10 +316,10 @@ function updateText(obj) {
 
 
 function centerAlignEle(noenText) {
-    var parentWidth = $(noenText).parent().parent().parent().width();
-    var parentHeight = $(noenText).parent().parent().parent().height();
-    var horizontalCenterPosition = (parentWidth / 2) - ($(noenText).width() / 2.5);
-    var verticalCenterPosition = Math.floor(parentHeight / 4);
+    var parentWidth = $(noenText).parent().parent().parent().parent().width();
+    var parentHeight = $(noenText).parent().parent().parent().parent().height();
+    var horizontalCenterPosition = (parentWidth / 3);
+    var verticalCenterPosition = Math.floor(parentHeight / 8);
     if (noenText == ".noenText2") {
         verticalCenterPosition = verticalCenterPosition + 100;
     } else if (noenText == ".noenText3") {
