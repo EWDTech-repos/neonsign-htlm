@@ -101,6 +101,7 @@ function getFontSize() {
     return currentSizeNumber;
 }
 var sizeIncreament = 0;
+var widthReturn = false;
 
 function increaseSize() {
     var fontSize = getFontSize();
@@ -109,15 +110,19 @@ function increaseSize() {
         var newFontSize = fontSize + 8;
 
         // $('.price').html((parseFloat($('.price').html()) + 10).toFixed(0))
-        setFontSize(newFontSize);
+
 
 
         if ($('li.active').hasClass('one'))
-            cost_calcultor($('.noenText1'));
-        else if ($('li.active').hasClass('two'))
-            cost_calcultor($('.noenText1'), $('.noenText2'));
+            widthReturn = cost_calcultor($('.noenText1'));
+        else
+        if ($('li.active').hasClass('two'))
+            widthReturn = cost_calcultor($('.noenText1'), $('.noenText2'));
         else if ($('li.active').hasClass('three'))
-            cost_calcultor($('.noenText1'), $('.noenText2'), $('.noenText3'));
+            widthReturn = cost_calcultor($('.noenText1'), $('.noenText2'), $('.noenText3'));
+        if (widthReturn)
+            setFontSize(newFontSize);
+
     }
 
 }
@@ -131,11 +136,14 @@ function decreaseSize() {
         setFontSize(newFontSize);
 
         if ($('li.active').hasClass('one'))
-            cost_calcultor($('.noenText1'));
-        else if ($('li.active').hasClass('two'))
-            cost_calcultor($('.noenText1'), $('.noenText2'));
+            widthReturn = cost_calcultor($('.noenText1'));
+        else
+        if ($('li.active').hasClass('two'))
+            widthReturn = cost_calcultor($('.noenText1'), $('.noenText2'));
         else if ($('li.active').hasClass('three'))
-            cost_calcultor($('.noenText1'), $('.noenText2'), $('.noenText3'));
+            widthReturn = cost_calcultor($('.noenText1'), $('.noenText2'), $('.noenText3'));
+        if (widthReturn)
+            setFontSize(newFontSize);
     }
 
 }
@@ -181,6 +189,8 @@ function cost_calcultor(nText1, nText2, nText3) {
 
     finalHeight += get_height(textOBJ, fontHeightVar);
     finalWidth = get_obj_width(textOBJ, fontHeightVar);
+    if (finalWidth > 72)
+        return false;
     sq = Math.sqrt(finalWidth * (finalHeight));
     if (textOBJ.attr('data-class') == 'SciFi' || textOBJ.attr('data-class') == 'Nevada' || textOBJ.attr('data-class') == 'LoveNeon' || textOBJ.attr('data-class') == 'Marquee' || textOBJ.attr('data-class') == 'NeonGlow' || textOBJ.attr('data-class') == 'Mayfair')
         manufacture_cost = sq * 4.75 * 2;
@@ -191,6 +201,7 @@ function cost_calcultor(nText1, nText2, nText3) {
     total_cost = (shipping_cost + manufacture_cost) * 2;
     $('.price').html(total_cost.toFixed(0))
     $('.size').html(Math.round(finalWidth) + "x" + Math.round(finalHeight) + "inches(" + (Math.round(finalWidth) * 2.54).toFixed(0) + "x" + (Math.round(finalHeight) * 2.54).toFixed(0) + "cm);")
+    return true;
 }
 
 function get_height(inputOBJ, fHeightVar) {
