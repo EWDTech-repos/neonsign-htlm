@@ -3,7 +3,7 @@ var backingShape = "Text Shape";
 var noenText = ".noenText1";
 var lineTab = "#lineTab";
 $(document).ready(function() {
-    setFont('Alexa', 2, ".Alexa");
+    setFont('WildScript', 2, ".WildScript");
     selectLineColumn(lineTab + " li:first-child");
     getDeliverDate(21)
     $('.font-btn').click(function() {
@@ -343,7 +343,7 @@ function centerAlignEle(noenText) {
     var parentWidth = $(noenText).parent().parent().parent().parent().width();
     var parentHeight = $(noenText).parent().parent().parent().parent().height();
     var horizontalCenterPosition = (parentWidth / 3);
-    var verticalCenterPosition = Math.floor(parentHeight / 18);
+    var verticalCenterPosition = Math.floor(parentHeight / 6);
     if (noenText == ".noenText2") {
         verticalCenterPosition = verticalCenterPosition + 100;
     } else if (noenText == ".noenText3") {
@@ -481,7 +481,7 @@ setInterval(function() {
         $(this).html("<span style='font-family:Arial !important;' class='top-tabs'>" + i + "</span><span>" + $($("#input-font-id").val()).val().substring(0, 4) + "</span>");
         i++;
     });
-    $("span.Alexa").removeClass("activeFont");
+    $("span.WildScript").removeClass("activeFont");
 }, 500);
 
 function changeclass(e) {
