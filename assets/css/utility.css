@@ -763,6 +763,48 @@ a {
 }
 
 
+/* / Code Color tube 10 end / / Code Color tube 11 start /  */
+
+.cl-tube-12 {
+    background-color: rgb(225, 227, 230) !important;
+}
+
+.cl-tube-12-on {
+    background-color: #fff !important;
+    box-shadow: rgb(255 255 255) 0px 0px 5px, rgb(255 255 255) 0px 0px 10px, rgb(225 227 230) 0px 0px 20px, rgb(225 227 230) 0px 0px 30px, rgb(225 227 230) 0px 0px 40px, rgb(225 227 230) 0px 0px 55px, rgb(225 227 230) 0px 0px 75px;
+}
+
+.cl-tube-12:hover {
+    box-shadow: rgb(255 255 255) 0px 0px 5px, rgb(255 255 255) 0px 0px 10px, rgb(225 227 230) 0px 0px 20px, rgb(225 227 230) 0px 0px 30px, rgb(225 227 230) 0px 0px 40px, rgb(225 227 230) 0px 0px 55px, rgb(225 227 230) 0px 0px 75px;
+}
+
+.cl-tube-12-text {
+    background-color: transparent !important;
+    text-shadow: rgb(255 255 255) 0px 0px 5px, rgb(255 255 255) 0px 0px 10px, rgb(225 227 230) 0px 0px 20px, rgb(225 227 230) 0px 0px 30px, rgb(225 227 230) 0px 0px 40px, rgb(225 227 230) 0px 0px 55px, rgb(225 227 230) 0px 0px 75px;
+}
+
+
+/* / Code Color tube 10 end / / Code Color tube 11 start /  */
+
+.cl-tube-13 {
+    background-color: rgb(144, 220, 255) !important;
+}
+
+.cl-tube-13-on {
+    background-color: #fff !important;
+    box-shadow: rgb(255 255 255) 0px 0px 5px, rgb(255 255 255) 0px 0px 10px, rgb(144 220 255) 0px 0px 20px, rgb(144 220 255) 0px 0px 30px, rgb(144 220 255) 0px 0px 40px, rgb(144 220 255) 0px 0px 55px, rgb(144 220 255) 0px 0px 75px;
+}
+
+.cl-tube-13:hover {
+    box-shadow: rgb(255 255 255) 0px 0px 5px, rgb(255 255 255) 0px 0px 10px, rgb(144 220 255) 0px 0px 20px, rgb(144 220 255) 0px 0px 30px, rgb(144 220 255) 0px 0px 40px, rgb(144 220 255) 0px 0px 55px, rgb(144 220 255) 0px 0px 75px;
+}
+
+.cl-tube-13-text {
+    background-color: transparent !important;
+    text-shadow: rgb(255 255 255) 0px 0px 5px, rgb(255 255 255) 0px 0px 10px, rgb(144 220 255) 0px 0px 20px, rgb(144 220 255) 0px 0px 30px, rgb(144 220 255) 0px 0px 40px, rgb(144 220 255) 0px 0px 55px, rgb(144 220 255) 0px 0px 75px;
+}
+
+
 /* / Code Color tube 11 end / / Code White tube 1 start /  */
 
 .wh-tube-1-on {
