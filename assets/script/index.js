@@ -19,9 +19,9 @@ $(document).ready(function() {
     });
 
 
-    if (location.protocol !== "https:" || location.protocol === "www") {
-        location.protocol = "https:";
-    }
+    // if (location.protocol !== "https:" || location.protocol === "www") {
+    //     location.protocol = "https:";
+    // }
     /************* Choose backing color*************/
     $("#backingColorOption li a").click(function() {
         if (!$(this).hasClass("bg-F34EFF")) {
@@ -204,11 +204,23 @@ function get_height(inputOBJ, fHeightVar) {
 
 function get_obj_width(textOBJ, fHeightVar) {
     noOfLines = 1;
-    nChar = textOBJ.html().length;
+    var textBreak = textOBJ.html().split('<br>')
+        // console.log(textBreak);
+    var textMax = '';
+    for (var i = 0; i < textBreak.length; i++) {
+        if (i == 0)
+            textMax = textBreak[i].length;
+        if (textMax < textBreak[i].length)
+            textMax = textBreak[i].length;
+    }
+    nChar = textMax;
+    console.log(nChar);
     aspectRatio = parseFloat(textOBJ.attr('data-aspect_ratio'));
     noOfLines = (textOBJ.html().match(/<br>/g) || []).length > 0 ? (textOBJ.html().match(/<br>/g) || []).length + noOfLines : noOfLines + 0;
-    height = parseInt(textOBJ.attr("data-height")) + fHeightVar;
-
+    if (noOfLines > 1)
+        height = (parseInt(textOBJ.attr("data-height")) + fHeightVar) * noOfLines;
+    else
+        height = parseInt(textOBJ.attr("data-height")) + fHeightVar;
     finalWidth = ((height / noOfLines) / aspectRatio) * nChar;
     return finalWidth;
 }
