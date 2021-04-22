@@ -190,7 +190,7 @@ function cost_calcultor(nText1, nText2, nText3) {
     shipping_cost = (((finalWidth + 2) * ((finalHeight) + 2) * 4) * conversion) * 9.49 + 16.3;
     total_cost = (shipping_cost + manufacture_cost) * 2;
     $('.price').html(total_cost.toFixed(0))
-    $('.size').html(Math.round(finalWidth) + "x" + Math.round(finalHeight) + "inches(" + (Math.round(finalWidth) * 2.54).toFixed(0) + "x" + (Math.round(finalHeight) * 2.54).toFixed(0) + "cm)")
+    $('.size').html(Math.round(finalWidth) + "x" + Math.round(finalHeight) + "inches(" + (Math.round(finalWidth) * 2.54).toFixed(0) + "x" + (Math.round(finalHeight) * 2.54).toFixed(0) + "cm);")
 }
 
 function get_height(inputOBJ, fHeightVar) {
@@ -267,7 +267,7 @@ function selectLineColumn(obj) {
         centerAlignEle(noenText);
         $(noenText).html($("#one_text_1").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', $(noenText).data("size") + "px");
         $("#lineonefinaltext").html($("#one_text_1").val()).show();
-        no_ch = $(noenText).html().length;
+
         cost_calcultor($(noenText));
 
     }
@@ -368,7 +368,8 @@ function showSlides(n) {
 
 
 function myFunction() {
-    $('#copy_content').val($('#copyText').text().replace(/\s/g, ""));
+    $('#copy_content').val($('#copyText').text().replace(/\s/g, "").replace(/\;/g, "\n"));
+    console.log($('#copy_content').val());
     var copyText = document.getElementById("copy_content");
     copyText.select();
     copyText.setSelectionRange(0, 99999)
