@@ -319,7 +319,7 @@ function centerAlignEle(noenText) {
     var parentWidth = $(noenText).parent().parent().parent().parent().width();
     var parentHeight = $(noenText).parent().parent().parent().parent().height();
     var horizontalCenterPosition = (parentWidth / 3);
-    var verticalCenterPosition = Math.floor(parentHeight / 8);
+    var verticalCenterPosition = Math.floor(parentHeight / 18);
     if (noenText == ".noenText2") {
         verticalCenterPosition = verticalCenterPosition + 100;
     } else if (noenText == ".noenText3") {
