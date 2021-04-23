@@ -562,7 +562,7 @@ function commonBtnFun3(e) {
     var final_price, total_price, install;
     total_price = parseFloat($('.price').html())
     if ($(e).hasClass("bg-F34EFF")) {
-        if ($('div.bg-F34EFF').length != 1 && !$(e).hasClass('rush-order'))
+        if (!$(e).hasClass('rush-order') && !$(e).hasClass('default'))
             final_price = total_price - 10;
         else if ($(e).hasClass('rush-order')) {
             final_price = total_price - 50;
@@ -571,7 +571,7 @@ function commonBtnFun3(e) {
         $(e).removeClass("bg-F34EFF ");
 
     } else {
-        if ($('div.bg-F34EFF').length != 0 && !$(e).hasClass('rush-order'))
+        if (!$(e).hasClass('rush-order') && !$(e).hasClass('default'))
             final_price = total_price + 10;
         else if ($(e).hasClass('rush-order')) {
             final_price = total_price + 50;
