@@ -90,7 +90,7 @@ function getDeliverDate(day) {
 
     var deliverDate = new Date();
     deliverDate.setDate(deliverDate.getDate() + day);
-    $('.deiverDate').html(deliverDate.getMonth() + 1 + "-" + deliverDate.getDate() + "-" + deliverDate.getFullYear() + " (or earlier)");
+    $('.deiverDate').html(deliverDate.getMonth() + 1 + "-" + deliverDate.getDate() + "-" + deliverDate.getFullYear() + " (or earlier);");
 }
 
 function getFontSize() {
@@ -117,7 +117,6 @@ function increaseSize() {
         objFontSize = parseInt($(noenText).attr("data-height", increment));
         fontDataClassHeight = $(noenText).attr('data-class');
         parseInt($('.' + fontDataClassHeight).attr("data-height", increment));
-        console.log(fontDataClassHeight);
 
         if ($('li.active').hasClass('one'))
             widthReturn = cost_calcultor($('.noenText1'));
@@ -131,6 +130,46 @@ function increaseSize() {
     }
 
 }
+let ObjMinFontSize = {
+    "Alexa": 7,
+    "Bayview": 8,
+    "Amsterdam": 7,
+    "Greenworld": 7,
+    "NewCursive": 7,
+    "Barcelona": 9,
+    "Vintage": 7,
+    "Amanda": 9,
+    "Freespirit": 10,
+    "Chelsea": 10,
+    "Signature": 9,
+    "Austin": 8,
+    "Neonscript": 12,
+    "Freehand": 9,
+    "LoveNote": 7,
+    "Northshore": 10,
+    "Beachfront": 8,
+    "Royalty": 9,
+    "Rocket": 7,
+    "WildScript": 12,
+    "Avante": 5,
+    "Monaco": 5,
+    "Waikiki": 5,
+    "ClassicType": 5,
+    "Typewriter": 5,
+    "Buttercup": 6,
+    "Melbourne": 6,
+    "NeoTokyo": 6,
+    "LoveNeon": 11,
+    "Marquee": 11,
+    "Mayfair": 0,
+    "NeonGlow": 11,
+    "NeonLite": 6,
+    "Neontrace": 8,
+    "Nevada": 11,
+    "SciFi": 11,
+
+};
+
 
 function decreaseSize() {
     var fontSize = getFontSize();
@@ -141,10 +180,10 @@ function decreaseSize() {
 
 
     var objFontSize = parseInt($(noenText).attr("data-height"));
+    var objFontName = $(noenText).attr("data-class");
     var increment = objFontSize - 1;
-    if (increment < 7)
+    if (increment < ObjMinFontSize[objFontName])
         return false;
-    objFontSize = parseInt($(noenText).attr("data-height", increment));
     fontDataClassHeight = $(noenText).attr('data-class');
     parseInt($('.' + fontDataClassHeight).attr("data-height", increment));
     if ($('li.active').hasClass('one'))
