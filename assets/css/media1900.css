@@ -64,7 +64,7 @@
     }
     .accessary-btn {
         padding: 6px 8px;
-        font-size: 13px;
+        font-size: 11px;
     }
     .blink_text {
         padding-right: 10px !important;
@@ -132,7 +132,7 @@
     }
     .accessary-btn {
         padding: 6px 8px;
-        font-size: 10px;
+        font-size: 7px;
     }
     .blink_text {
         padding-right: 8px !important;
@@ -200,7 +200,7 @@
     }
     .accessary-btn {
         padding: 6px 8px;
-        font-size: 8px;
+        font-size: 4.5px;
     }
     .blink_text {
         padding-right: 8px !important;
@@ -267,14 +267,14 @@
         width: 6px;
     }
     .f-16-btn {
-        font-size: 3px;
+        font-size: 4px;
     }
     /* .f-17-icon{
         font-size: 8px;
     } */
     .accessary-btn {
         padding: 6px 8px;
-        font-size: 6px;
+        font-size: 4px;
     }
     .blink_text {
         padding-right: 8px !important;
@@ -495,7 +495,7 @@
         padding: 0.2rem 0.5rem !important;
     }
     .f-22 {
-        font-size: 5px;
+        font-size: 3px;
     }
     .f-19-tabs {
         font-size: 5px;
@@ -505,6 +505,8 @@
     }
     .font-btn {
         font-size: 6px;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
     }
     .main-padding {
         padding-left: 5px;
@@ -538,15 +540,12 @@
         padding: 2px 5px;
         font-size: 5px;
     }
-    .font-btn {
-        font-size: 5px;
-    }
     .color-selection {
         height: 15px;
         width: 4px;
     }
     .f-16-btn {
-        font-size: 3px;
+        font-size: 5px;
     }
     /* .f-17-icon{
         font-size: 6px;
@@ -559,10 +558,10 @@
         padding-right: 8px !important;
         padding-left: 8px !important;
         margin-bottom: 0px !important;
-        font-size: 5px !important;
+        font-size: 3px !important;
     }
     .blink_text-Inner {
-        font-size: 5px !important;
+        font-size: 3px !important;
     }
     .h-700 {
         height: 180px !important;
@@ -571,7 +570,7 @@
         line-height: 10px !important;
     }
     .wrapper-secleted-output {
-        padding: 10px !important;
+        padding: 5px !important;
     }
     .no-gutter>[class*='col-'] {
         padding-right: 0;
