@@ -1,594 +1,617 @@
 @media screen and (max-width: 1895px) and (min-width: 1600px) {
-    .nav-link-tabs {
-        padding: 0.2rem 0.5rem !important;
-    }
-    .f-19-tabs {
-        font-size: 16px;
-    }
-    .px-3 {
-        padding-left: 0.5rem !important;
-        padding-right: 0.5rem !important;
-    }
-    .f-16-btn {
-        font-size: 14px;
-    }
-    .h-700 {
-        height: 630px !important;
-    }
-    .py-2 {
-        padding-bottom: 0.5rem !important;
-        padding-top: 0.5rem !important;
-    }
+  .nav-link-tabs {
+    padding: 0.2rem 0.5rem !important;
+  }
+  .f-19-tabs {
+    font-size: 16px;
+  }
+  .px-3 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .f-16-btn {
+    font-size: 14px;
+  }
+  .h-700 {
+    height: 630px !important;
+  }
+  .py-2 {
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+  }
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1400px) {
-    .nav-link-tabs {
-        padding: 0.2rem 0.5rem !important;
-    }
-    .f-19-tabs {
-        font-size: 14px;
-    }
-    .f-16 {
-        font-size: 14px;
-    }
-    .f-18 {
-        font-size: 16px;
-    }
-    .f-22 {
-        font-size: 11px !important;
-    }
-    .px-3 {
-        padding-left: 0.5rem !important;
-        padding-right: 0.5rem !important;
-    }
-    .py-2 {
-        padding-bottom: 0.5rem !important;
-        padding-top: 0.5rem !important;
-    }
-    .button-color {
-        padding: 2px 8px;
-        border-radius: 5px;
-    }
-    .top-tabs {
-        font-size: 14px !important;
-    }
-    .font-btn {
-        font-size: 13px;
-    }
-    .color-selection {
-        height: 40px;
-        width: 12px;
-    }
-    .f-16-btn {
-        font-size: 11px;
-    }
-    .accessary-btn {
-        padding: 6px 8px;
-        font-size: 11px;
-    }
-    .blink_text {
-        padding-right: 10px !important;
-        padding-left: 10px !important;
-        margin-bottom: 0px !important;
-        font-size: 11px !important;
-    }
-    .blink_text-Inner {
-        font-size: 11px !important;
-    }
-    .h-700 {
-        height: 545px !important;
-    }
+  .nav-link-tabs {
+    padding: 0.2rem 0.5rem !important;
+  }
+  .f-19-tabs {
+    font-size: 14px;
+  }
+  .f-16 {
+    font-size: 14px;
+  }
+  .f-18 {
+    font-size: 16px;
+  }
+  .f-22 {
+    font-size: 11px !important;
+  }
+  .px-3 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .py-2 {
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+  }
+  .button-color {
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  .top-tabs {
+    font-size: 14px !important;
+  }
+  .font-btn {
+    font-size: 13px;
+  }
+  .color-selection {
+    height: 40px;
+    width: 12px;
+  }
+  .f-16-btn {
+    font-size: 11px;
+  }
+  .accessary-btn {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+  .blink_text {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    margin-bottom: 0px !important;
+    font-size: 11px !important;
+  }
+  .blink_text-Inner {
+    font-size: 11px !important;
+  }
+  .h-700 {
+    height: 545px !important;
+  }
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
-    .display-1 {
-        font-size: 3rem !important;
-    }
-    .top-heading {
-        font-size: 11px !important;
-    }
-    .block-font {
-        font-size: 12px;
-    }
-    .nav-link-tabs {
-        padding: 0.2rem 0.5rem !important;
-    }
-    .f-19-tabs {
-        font-size: 11px;
-    }
-    .f-16 {
-        font-size: 12px;
-    }
-    .f-18 {
-        font-size: 13px;
-    }
-    .f-22 {
-        font-size: 10px !important;
-    }
-    .px-3 {
-        padding-left: 0.5rem !important;
-        padding-right: 0.5rem !important;
-    }
-    .py-2 {
-        padding-bottom: 0.5rem !important;
-        padding-top: 0.5rem !important;
-    }
-    .top-tabs {
-        font-size: 12px !important;
-    }
-    .button-color {
-        padding: 2px 6px;
-        font-size: 12px;
-    }
-    .font-btn {
-        font-size: 12px;
-    }
-    .color-selection {
-        height: 40px;
-        width: 10px;
-    }
-    .f-16-btn {
-        font-size: 7px;
-    }
-    .accessary-btn {
-        padding: 6px 8px;
-        font-size: 7px;
-    }
-    .blink_text {
-        padding-right: 8px !important;
-        padding-left: 8px !important;
-        margin-bottom: 0px !important;
-        font-size: 8px !important;
-    }
-    .blink_text-Inner {
-        font-size: 9px !important;
-    }
-    .h-700 {
-        height: 455px !important;
-    }
+  .display-1 {
+    font-size: 3rem !important;
+  }
+  .top-heading {
+    font-size: 11px !important;
+  }
+  .block-font {
+    font-size: 12px;
+  }
+  .nav-link-tabs {
+    padding: 0.2rem 0.5rem !important;
+  }
+  .f-19-tabs {
+    font-size: 11px;
+  }
+  .f-16 {
+    font-size: 12px;
+  }
+  .f-18 {
+    font-size: 13px;
+  }
+  .f-22 {
+    font-size: 10px !important;
+  }
+  .px-3 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .py-2 {
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+  }
+  .top-tabs {
+    font-size: 12px !important;
+  }
+  .button-color {
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+  .font-btn {
+    font-size: 12px;
+  }
+  .color-selection {
+    height: 40px;
+    width: 10px;
+  }
+  .f-16-btn {
+    font-size: 7px;
+  }
+  .accessary-btn {
+    padding: 6px 8px;
+    font-size: 7px;
+  }
+  .blink_text {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    margin-bottom: 0px !important;
+    font-size: 8px !important;
+  }
+  .blink_text-Inner {
+    font-size: 9px !important;
+  }
+  .h-700 {
+    height: 455px !important;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1000px) {
-    .display-1 {
-        font-size: 2.5rem !important;
-    }
-    .top-heading {
-        font-size: 11px !important;
-    }
-    .block-font {
-        font-size: 8px;
-    }
-    .nav-link-tabs {
-        padding: 0.2rem 0.5rem !important;
-    }
-    .f-19-tabs {
-        font-size: 7px;
-    }
-    .f-16 {
-        font-size: 8px;
-    }
-    .f-18 {
-        font-size: 10px;
-    }
-    .f-22 {
-        font-size: 8px !important;
-    }
-    .px-3 {
-        padding-left: 0.5rem !important;
-        padding-right: 0.5rem !important;
-    }
-    .py-2 {
-        padding-bottom: 0.5rem !important;
-        padding-top: 0.5rem !important;
-    }
-    .top-tabs {
-        font-size: 10px !important;
-    }
-    .button-color {
-        padding: 2px 6px;
-        font-size: 8px;
-    }
-    .font-btn {
-        font-size: 9px;
-    }
-    .color-selection {
-        height: 25px;
-        width: 8px;
-    }
-    .f-16-btn {
-        font-size: 4.5px;
-    }
-    .accessary-btn {
-        padding: 6px 8px;
-        font-size: 4.5px;
-    }
-    .blink_text {
-        padding-right: 8px !important;
-        padding-left: 8px !important;
-        margin-bottom: 0px !important;
-        font-size: 7px !important;
-    }
-    .blink_text-Inner {
-        font-size: 7px !important;
-    }
-    .h-700 {
-        height: 370px !important;
-    }
-    textarea {
-        line-height: 10px !important;
-    }
+  .display-1 {
+    font-size: 2.5rem !important;
+  }
+  .top-heading {
+    font-size: 11px !important;
+  }
+  .block-font {
+    font-size: 8px;
+  }
+  .nav-link-tabs {
+    padding: 0.2rem 0.5rem !important;
+  }
+  .f-19-tabs {
+    font-size: 7px;
+  }
+  .f-16 {
+    font-size: 8px;
+  }
+  .f-18 {
+    font-size: 10px;
+  }
+  .f-22 {
+    font-size: 8px !important;
+  }
+  .px-3 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .py-2 {
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+  }
+  .top-tabs {
+    font-size: 10px !important;
+  }
+  .button-color {
+    padding: 2px 6px;
+    font-size: 8px;
+  }
+  .font-btn {
+    font-size: 9px;
+  }
+  .color-selection {
+    height: 25px;
+    width: 8px;
+  }
+  .f-16-btn {
+    font-size: 4.5px;
+  }
+  .accessary-btn {
+    padding: 6px 8px;
+    font-size: 4.5px;
+  }
+  .blink_text {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    margin-bottom: 0px !important;
+    font-size: 7px !important;
+  }
+  .blink_text-Inner {
+    font-size: 7px !important;
+  }
+  .h-700 {
+    height: 370px !important;
+  }
+  textarea {
+    line-height: 10px !important;
+  }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 768px) {
-    .display-1 {
-        font-size: 2rem !important;
-    }
-    .top-heading {
-        font-size: 8px !important;
-    }
-    .block-font {
-        font-size: 6px;
-    }
-    .nav-link-tabs {
-        padding: 0.15rem 0.3rem !important;
-    }
-    .f-19-tabs {
-        font-size: 5px;
-    }
-    .f-16 {
-        font-size: 5px;
-    }
-    .f-18 {
-        font-size: 7px;
-    }
-    .f-22 {
-        font-size: 6px !important;
-    }
-    .px-3 {
-        padding-left: 0.3rem !important;
-        padding-right: 0.3rem !important;
-    }
-    .py-2 {
-        padding-bottom: 0.2rem !important;
-        padding-top: 0.2rem !important;
-    }
-    .top-tabs {
-        font-size: 8px !important;
-    }
-    .button-color {
-        padding: 2px 5px;
-        font-size: 8px;
-    }
-    .font-btn {
-        font-size: 7px;
-    }
-    .color-selection {
-        height: 15px;
-        width: 6px;
-    }
-    .f-16-btn {
-        font-size: 4px;
-    }
-    /* .f-17-icon{
+  .display-1 {
+    font-size: 2rem !important;
+  }
+  .top-heading {
+    font-size: 8px !important;
+  }
+  .block-font {
+    font-size: 6px;
+  }
+  .nav-link-tabs {
+    padding: 0.15rem 0.3rem !important;
+  }
+  .f-19-tabs {
+    font-size: 5px;
+  }
+  .f-16 {
+    font-size: 5px;
+  }
+  .f-18 {
+    font-size: 7px;
+  }
+  .f-22 {
+    font-size: 6px !important;
+  }
+  .px-3 {
+    padding-left: 0.3rem !important;
+    padding-right: 0.3rem !important;
+  }
+  .py-2 {
+    padding-bottom: 0.2rem !important;
+    padding-top: 0.2rem !important;
+  }
+  .top-tabs {
+    font-size: 8px !important;
+  }
+  .button-color {
+    padding: 2px 5px;
+    font-size: 8px;
+  }
+  .font-btn {
+    font-size: 7px;
+  }
+  .color-selection {
+    height: 15px;
+    width: 6px;
+  }
+  .f-16-btn {
+    font-size: 4px;
+  }
+  /* .f-17-icon{
         font-size: 8px;
     } */
-    .accessary-btn {
-        padding: 6px 8px;
-        font-size: 4px;
-    }
-    .blink_text {
-        padding-right: 8px !important;
-        padding-left: 8px !important;
-        margin-bottom: 0px !important;
-        font-size: 5px !important;
-    }
-    .blink_text-Inner {
-        font-size: 5px !important;
-    }
-    .h-700 {
-        height: 270px !important;
-    }
-    textarea {
-        line-height: 10px !important;
-    }
-    .wrapper-secleted-output {
-        padding: 10px !important;
-    }
-    .no-gutter>[class*='col-'] {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .disturb-font {
-        font-size: 6px !important;
-    }
-    .cursor-pointer {
-        margin-left: 0px !important;
-    }
+  .accessary-btn {
+    padding: 6px 8px;
+    font-size: 4px;
+  }
+  .blink_text {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    margin-bottom: 0px !important;
+    font-size: 5px !important;
+  }
+  .blink_text-Inner {
+    font-size: 5px !important;
+  }
+  .h-700 {
+    height: 270px !important;
+  }
+  textarea {
+    line-height: 10px !important;
+  }
+  .wrapper-secleted-output {
+    padding: 10px !important;
+  }
+  .no-gutter > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .disturb-font {
+    font-size: 6px !important;
+  }
+  .cursor-pointer {
+    margin-left: 0px !important;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 580px) {
-    .main-padding {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .display-1 {
-        font-size: 2rem !important;
-    }
-    .top-heading {
-        font-size: 8px !important;
-    }
-    .block-font {
-        font-size: 6px;
-    }
-    .nav-link-tabs {
-        padding: 0.15rem 0.3rem !important;
-    }
-    .f-19-tabs {
-        font-size: 7px;
-    }
-    .f-16 {
-        font-size: 7px;
-    }
-    .f-18 {
-        font-size: 8px;
-    }
-    .f-22 {
-        font-size: 6px;
-    }
-    .button-color {
-        padding: 2px 5px;
-        font-size: 7px;
-    }
-    .font-btn {
-        font-size: 10px;
-    }
-    .color-selection {
-        height: 15px;
-        width: 4px;
-    }
-    .f-16-btn {
-        font-size: 7px;
-    }
-    /* .f-17-icon{
+  .main-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .display-1 {
+    font-size: 2rem !important;
+  }
+  .top-heading {
+    font-size: 8px !important;
+  }
+  .block-font {
+    font-size: 6px;
+  }
+  .nav-link-tabs {
+    padding: 0.15rem 0.3rem !important;
+  }
+  .f-19-tabs {
+    font-size: 7px;
+  }
+  .f-16 {
+    font-size: 7px;
+  }
+  .f-18 {
+    font-size: 8px;
+  }
+  .f-22 {
+    font-size: 6px;
+  }
+  .button-color {
+    padding: 2px 5px;
+    font-size: 7px;
+  }
+  .font-btn {
+    font-size: 10px;
+  }
+  .color-selection {
+    height: 15px;
+    width: 4px;
+  }
+  .f-16-btn {
+    font-size: 7px;
+  }
+  /* .f-17-icon{
         font-size: 6px;
     } */
-    .top-tabs {
-        font-size: 7px !important;
-    }
-    .accessary-btn {
-        padding: 6px 8px;
-        font-size: 7px;
-    }
-    .blink_text {
-        padding-right: 8px !important;
-        padding-left: 8px !important;
-        margin-bottom: 0px !important;
-        font-size: 8px !important;
-    }
-    .blink_text-Inner {
-        font-size: 9px !important;
-    }
-    .h-700 {
-        height: 180px !important;
-    }
-    textarea {
-        line-height: 10px !important;
-    }
-    .wrapper-secleted-output {
-        padding: 5px !important;
-    }
-    .no-gutter>[class*='col-'] {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .disturb-font {
-        font-size: 5px !important;
-    }
-    .cursor-pointer {
-        margin-left: 0px !important;
-    }
-    .img-mobile {
-        display: none !important;
-    }
-    .img-tabs {
-        font-size: 8px;
-    }
-    #whole-backing {
-        left: 126px !important;
-    }
+  .top-tabs {
+    font-size: 7px !important;
+  }
+  .accessary-btn {
+    padding: 6px 8px;
+    font-size: 7px;
+  }
+  .blink_text {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    margin-bottom: 0px !important;
+    font-size: 8px !important;
+  }
+  .blink_text-Inner {
+    font-size: 9px !important;
+  }
+  .h-700 {
+    height: 180px !important;
+  }
+  textarea {
+    line-height: 10px !important;
+  }
+  .wrapper-secleted-output {
+    padding: 5px !important;
+  }
+  .no-gutter > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .disturb-font {
+    font-size: 5px !important;
+  }
+  .cursor-pointer {
+    margin-left: 0px !important;
+  }
+  .img-mobile {
+    display: none !important;
+  }
+  .img-tabs {
+    font-size: 8px;
+  }
+  #whole-backing {
+    left: 126px !important;
+  }
+  .btns-input-mob{
+      width: 33% !important;
+      text-align: center !important;
+  }
+  .btns-backing-mob{
+    width: 27% !important;
+}
 }
 
-@media screen and (max-width:580px) {
-    #btn-padding {
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
-    .clas-no-wrap {
-        flex-wrap: wrap !important;
-    }
-    .row {
-        margin-left: -5px;
-        margin-right: -5px;
-    }
-    .col,
-    .col-1,
-    .col-10,
-    .col-11,
-    .col-12,
-    .col-2,
-    .col-3,
-    .col-4,
-    .col-5,
-    .col-6,
-    .col-7,
-    .col-8,
-    .col-9,
-    .col-auto,
-    .col-lg,
-    .col-lg-1,
-    .col-lg-10,
-    .col-lg-11,
-    .col-lg-12,
-    .col-lg-2,
-    .col-lg-3,
-    .col-lg-4,
-    .col-lg-5,
-    .col-lg-6,
-    .col-lg-7,
-    .col-lg-8,
-    .col-lg-9,
-    .col-lg-auto,
-    .col-md,
-    .col-md-1,
-    .col-md-10,
-    .col-md-11,
-    .col-md-12,
-    .col-md-2,
-    .col-md-3,
-    .col-md-4,
-    .col-md-5,
-    .col-md-6,
-    .col-md-7,
-    .col-md-8,
-    .col-md-9,
-    .col-md-auto,
-    .col-sm,
-    .col-sm-1,
-    .col-sm-10,
-    .col-sm-11,
-    .col-sm-12,
-    .col-sm-2,
-    .col-sm-3,
-    .col-sm-4,
-    .col-sm-5,
-    .col-sm-6,
-    .col-sm-7,
-    .col-sm-8,
-    .col-sm-9,
-    .col-sm-auto,
-    .col-xl,
-    .col-xl-1,
-    .col-xl-10,
-    .col-xl-11,
-    .col-xl-12,
-    .col-xl-2,
-    .col-xl-3,
-    .col-xl-4,
-    .col-xl-5,
-    .col-xl-6,
-    .col-xl-7,
-    .col-xl-8,
-    .col-xl-9,
-    .col-xl-auto {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .row.no-gutters {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .mr-3 {
-        margin-right: 2px !important;
-    }
-    .form-control {
-        font-size: 0.7rem !important;
-        padding: 0.2rem 0.5rem !important;
-    }
-    .f-22 {
-        font-size: 3px;
-    }
-    .f-19-tabs {
-        font-size: 5px;
-    }
-    .f-16 {
-        font-size: 6px;
-    }
-    .font-btn {
-        font-size: 6px;
-        padding-top: 5px !important;
-        padding-bottom: 5px !important;
-    }
-    .main-padding {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .display-1 {
-        font-size: 2rem !important;
-    }
-    .top-tabs {
-        font-size: 5px !important;
-    }
-    .top-heading {
-        font-size: 8px !important;
-    }
-    .block-font {
-        font-size: 6px;
-    }
-    .nav-link-tabs {
-        padding: 0.15rem 0.3rem !important;
-    }
-    .f-19-tabs {
-        font-size: 4px;
-    }
-    .f-16 {
-        font-size: 4px;
-    }
-    .f-18 {
-        font-size: 5px;
-    }
-    .button-color {
-        padding: 2px 5px;
-        font-size: 5px;
-    }
-    .color-selection {
-        height: 15px;
-        width: 4px;
-    }
-    .f-16-btn {
-        font-size: 5px;
-    }
-    /* .f-17-icon{
+@media screen and (max-width: 580px) {
+  #btn-padding {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .clas-no-wrap {
+    flex-wrap: wrap !important;
+  }
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .col,
+  .col-1,
+  .col-10,
+  .col-11,
+  .col-12,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-auto,
+  .col-lg,
+  .col-lg-1,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-auto,
+  .col-md,
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-auto,
+  .col-sm,
+  .col-sm-1,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-auto,
+  .col-xl,
+  .col-xl-1,
+  .col-xl-10,
+  .col-xl-11,
+  .col-xl-12,
+  .col-xl-2,
+  .col-xl-3,
+  .col-xl-4,
+  .col-xl-5,
+  .col-xl-6,
+  .col-xl-7,
+  .col-xl-8,
+  .col-xl-9,
+  .col-xl-auto {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .row.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .mr-3 {
+    margin-right: 2px !important;
+  }
+  .form-control {
+    font-size: 0.7rem !important;
+    padding: 0.2rem 0.5rem !important;
+  }
+  .f-19-tabs {
+    font-size: 5px;
+  }
+  .f-16 {
+    font-size: 6px;
+  }
+  .font-btn {
+    font-size: 6px;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .main-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .display-1 {
+    font-size: 2rem !important;
+  }
+  .top-tabs {
+    font-size: 5px !important;
+  }
+  .top-heading {
+    font-size: 8px !important;
+  }
+  .block-font {
+    font-size: 6px;
+  }
+  .nav-link-tabs {
+    padding: 0.15rem 0.3rem !important;
+  }
+  .f-19-tabs {
+    font-size: 4px;
+  }
+  .f-16 {
+    font-size: 4px;
+  }
+  .f-18 {
+    font-size: 5px;
+  }
+  .button-color {
+    padding: 2px 5px;
+    font-size: 5px;
+  }
+  .color-selection {
+    height: 15px;
+    width: 8px;
+  }
+  .f-16-btn {
+    font-size: 5px;
+  }
+  /* .f-17-icon{
         font-size: 6px;
     } */
-    .accessary-btn {
-        padding: 6px 8px;
-        font-size: 5px;
-    }
-    .blink_text {
-        padding-right: 8px !important;
-        padding-left: 8px !important;
-        margin-bottom: 0px !important;
-        font-size: 3px !important;
-    }
-    .blink_text-Inner {
-        font-size: 3px !important;
-    }
-    .h-700 {
-        height: 180px !important;
-    }
-    textarea {
-        line-height: 10px !important;
-    }
-    .wrapper-secleted-output {
-        padding: 5px !important;
-    }
-    .no-gutter>[class*='col-'] {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .disturb-font {
-        font-size: 5px !important;
-    }
-    .cursor-pointer {
-        margin-left: 0px !important;
-    }
-    .img-mobile {
-        display: none !important;
-    }
-    .img-tabs {
-        font-size: 8px;
-    }
-    #whole-backing {
-        left: 126px !important;
-    }
+  .accessary-btn {
+    padding: 6px 8px;
+    font-size: 5px;
+  }
+  .blink_text {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    margin-bottom: 0px !important;
+    font-size: 3px !important;
+  }
+  .blink_text-Inner {
+    font-size: 3px !important;
+  }
+  .h-700 {
+    height: 180px !important;
+  }
+  textarea {
+    line-height: 10px !important;
+  }
+  .wrapper-secleted-output {
+    padding: 5px !important;
+    position: fixed !important;
+    top: 35% !important;
+    right: 9% !important;
+    bottom: 48% !important;
+    background: #666;
+    color: #fff;
+    border-radius: 5px;
+    width: 25% !important;
+
+  }
+  .f-22 {
+    font-size: 4px;
+  }
+  .no-gutter > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .disturb-font {
+    font-size: 5px !important;
+  }
+  .cursor-pointer {
+    margin-left: 0px !important;
+  }
+  .img-mobile {
+    display: none !important;
+  }
+  .img-tabs {
+    font-size: 8px;
+  }
+  #whole-backing {
+    left: 126px !important;
+  }
+  .btns-input-mob{
+    width: 33% !important;
+    text-align: center !important;
+}
+.btns-backing-mob{
+    width: 27% !important;
+}
 }

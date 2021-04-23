@@ -786,38 +786,38 @@ a {
 
 .cl-tube-12-on {
     background-color: #fff !important;
-    box-shadow:0 0 2px #666, 0 0 10px #fff2b9, 0 0 15px #fff2b9, 0 0 20px #fff2b9, 0 0 35px #fff2b9, 0 0 40px #fff2b9, 0 0 50px #fff2b9, 0 0 75px #fff2b9;
+    box-shadow:rgb(255 255 255) 0px 0px 2px, rgb(255 255 255) 0px 0px 4px, rgb(255 253 207) 0px 0px 8px, rgb(255 253 207) 0px 0px 12px, rgb(255 253 207) 0px 0px 16px, rgb(255 253 207) 0px 0px 22px, rgb(255 253 207) 0px 0px 30px;
 }
 
 .cl-tube-12:hover {
-    box-shadow:0 0 2px #666, 0 0 10px #fff2b9, 0 0 15px #fff2b9, 0 0 20px #fff2b9, 0 0 35px #fff2b9, 0 0 40px #fff2b9, 0 0 50px #fff2b9, 0 0 75px #fff2b9;
+    box-shadow:rgb(255 255 255) 0px 0px 2px, rgb(255 255 255) 0px 0px 4px, rgb(255 253 207) 0px 0px 8px, rgb(255 253 207) 0px 0px 12px, rgb(255 253 207) 0px 0px 16px, rgb(255 253 207) 0px 0px 22px, rgb(255 253 207) 0px 0px 30px;
 }
 
 .cl-tube-12-text {
     background-color: transparent !important;
-    text-shadow:rgb(102 102 102) 0px 0px 2px, rgb(255 242 185) 0px 0px 10px, rgb(255 242 185) 0px 0px 15px, rgb(255 242 185) 0px 0px 20px, rgb(255 242 185) 0px 0px 35px, rgb(255 242 185) 0px 0px 40px, rgb(255 242 185) 0px 0px 50px, rgb(255 242 185) 0px 0px 75px;
+    text-shadow: rgb(255 255 255) 0px 0px 5px, rgb(255 255 255) 0px 0px 10px, rgb(255 253 207) 0px 0px 20px, rgb(255 253 207) 0px 0px 30px, rgb(255 253 207) 0px 0px 40px, rgb(255 253 207) 0px 0px 55px, rgb(255 253 207) 0px 0px 75px;
 }
 
 
 /* / Code Color tube 10 end / / Code Color tube 11 start /  */
 
 .cl-tube-13 {
-    background-color: rgb(144, 220, 255) !important;
+    background-color: rgb(225, 227, 230) !important;
     transition: 0.5;
 }
 
 .cl-tube-13-on {
     background-color: #fff !important;
-    box-shadow: rgb(255 255 255) 0px 0px 5px, rgb(255 255 255) 0px 0px 10px, rgb(144 220 255) 0px 0px 20px, rgb(144 220 255) 0px 0px 30px, rgb(144 220 255) 0px 0px 40px, rgb(144 220 255) 0px 0px 55px, rgb(144 220 255) 0px 0px 75px;
+    box-shadow: rgb(255 255 255) 0px 0px 2px, rgb(255 255 255) 0px 0px 4px, rgb(225 227 230) 0px 0px 8px, rgb(225 227 230) 0px 0px 12px, rgb(225 227 230) 0px 0px 16px, rgb(225 227 230) 0px 0px 22px, rgb(225 227 230) 0px 0px 30px;
 }
 
 .cl-tube-13:hover {
-    box-shadow: rgb(255 255 255) 0px 0px 5px, rgb(255 255 255) 0px 0px 10px, rgb(144 220 255) 0px 0px 20px, rgb(144 220 255) 0px 0px 30px, rgb(144 220 255) 0px 0px 40px, rgb(144 220 255) 0px 0px 55px, rgb(144 220 255) 0px 0px 75px;
+    box-shadow: rgb(255 255 255) 0px 0px 2px, rgb(255 255 255) 0px 0px 4px, rgb(225 227 230) 0px 0px 8px, rgb(225 227 230) 0px 0px 12px, rgb(225 227 230) 0px 0px 16px, rgb(225 227 230) 0px 0px 22px, rgb(225 227 230) 0px 0px 30px;
 }
 
 .cl-tube-13-text {
     background-color: transparent !important;
-    text-shadow: rgb(142 172 232) 0px 0px 2px, rgb(142 172 232) 0px 0px 10px, rgb(142 172 232) 0px 0px 15px, rgb(142 172 232) 0px 0px 20px, rgb(142 172 232) 0px 0px 35px, rgb(142 172 232) 0px 0px 40px, rgb(142 172 232) 0px 0px 50px, rgb(142 172 232) 0px 0px 75px;
+    text-shadow: rgb(255 255 255) 0px 0px 5px, rgb(255 255 255) 0px 0px 10px, rgb(225 227 230) 0px 0px 20px, rgb(225 227 230) 0px 0px 30px, rgb(225 227 230) 0px 0px 40px, rgb(225 227 230) 0px 0px 55px, rgb(225 227 230) 0px 0px 75px;
 }
 
 
