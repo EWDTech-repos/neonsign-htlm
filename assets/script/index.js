@@ -496,6 +496,7 @@ function getClass(e) {
     });
     $(noenText).addClass($(e).data("class"));
     $(noenText).css('font-size', $(e).data("desk") + "px")
+    $(noenText).attr("data-size", $(e).data("desk"));
     $(noenText).attr("data-class", $(e).data("class"));
     $(noenText).attr("data-height", $(e).data("height"));
     $(noenText).attr("data-aspect_ratio", $(e).data("aspect_ratio"));

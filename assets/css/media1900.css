@@ -530,7 +530,7 @@
     }
     .nav-link-tabs {
         padding: 0.15rem 0.3rem !important;
-    } 
+    }
     .f-18 {
         font-size: 7px;
     }
@@ -558,7 +558,7 @@
         margin-bottom: 0px !important;
         font-size: 3px !important;
     }
-    #blink_text-mob{
+    #blink_text-mob {
         font-size: 5px !important;
     }
     .h-700 {
@@ -606,5 +606,10 @@
     }
     .btns-backing-mob {
         width: 29% !important;
+    }
+    .noenText1,
+    .noenText2,
+    .noenText3 {
+        font-size: 40px !important;
     }
 }
