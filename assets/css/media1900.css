@@ -575,14 +575,14 @@
     }
     .wrapper-secleted-output {
         padding: 5px !important;
-        /* position: fixed !important;
-    top: 35% !important;
-    right: 9% !important;
-    bottom: 48% !important;
-    background: #666;
-    color: #fff;
-    border-radius: 5px;
-    width: 25% !important; */
+        position: fixed !important;
+        /* top: 35% !important;
+        right: 9% !important;
+        bottom: 48% !important;
+        background: #666;
+        color: #fff;
+        border-radius: 5px;
+        width: 25% !important; */
     }
     .f-22 {
         font-size: 4px;
