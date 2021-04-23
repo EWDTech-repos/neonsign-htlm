@@ -406,10 +406,10 @@
 }
 
 @media screen and (max-width: 580px) {
-    #btn-padding {
+    /* #btn-padding {
         padding-left: 5px !important;
         padding-right: 5px !important;
-    }
+    } */
     .clas-no-wrap {
         flex-wrap: wrap !important;
     }
@@ -502,10 +502,10 @@
         padding: 0.2rem 0.5rem !important;
     }
     .f-19-tabs {
-        font-size: 5px;
+        font-size: 6px;
     }
     .f-16 {
-        font-size: 6px;
+        font-size: 7px;
     }
     .font-btn {
         font-size: 6px;
@@ -531,14 +531,10 @@
     .nav-link-tabs {
         padding: 0.15rem 0.3rem !important;
     }
-    .f-19-tabs {
-        font-size: 4px;
-    }
-    .f-16 {
-        font-size: 4px;
-    }
+  
+    
     .f-18 {
-        font-size: 5px;
+        font-size: 7px;
     }
     .button-color {
         padding: 2px 5px;
@@ -611,6 +607,6 @@
         text-align: center !important;
     }
     .btns-backing-mob {
-        width: 27% !important;
+        width: 29% !important;
     }
 }
