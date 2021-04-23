@@ -575,7 +575,7 @@
     }
     .wrapper-secleted-output {
         padding: 5px !important;
-        position: fixed !important;
+        /* position: fixed !important; */
         /* top: 35% !important;
         right: 9% !important;
         bottom: 48% !important;
