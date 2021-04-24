@@ -258,7 +258,6 @@ function cost_calcultor(nText1, nText2, nText3) {
 }
 
 function get_height(inputOBJ) {
-    console.log("height function  " + inputOBJ.html());
 
     fontHeight = parseInt(inputOBJ.attr("data-height"));
     noOfLines = (inputOBJ.html().match(/<br>/g) || []).length > 0 ? (inputOBJ.html().match(/<br>/g) || []).length : 0;
@@ -268,7 +267,6 @@ function get_height(inputOBJ) {
 function get_obj_width(textOBJ) {
     noOfLines = 1;
     var textBreak = textOBJ.html().split('<br>')
-    console.log(textOBJ.html());
     var textMax = '';
     for (var i = 0; i < textBreak.length; i++) {
         if (i == 0)
@@ -444,7 +442,6 @@ function showSlides(n) {
 
 function myFunction() {
     $('#copy_content').val($('#copyText').text().replace(/\s/g, "").replace(/\;/g, "\n"));
-    console.log($('#copy_content').val());
     var copyText = document.getElementById("copy_content");
     copyText.select();
     copyText.setSelectionRange(0, 99999)
