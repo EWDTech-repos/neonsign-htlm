@@ -76,7 +76,7 @@ function setFont(font, type, font_li) {
     $('.font-btn').removeClass('activeFont');
     var activeFont = $(font_li).addClass('activeFont');
     $(noenText).css("font-family", font);
-    $(noenText).css("font-size", $(font_li).attr('data-mob') + 'px');
+    window.innerWidth < 760 ? $(noenText).css("font-size", $(font_li).attr('data-mob') + 'px') : $(noenText).css("font-size", $(font_li).attr('data-desk') + 'px');
     $(noenText).css("line-height", $(font_li).attr('data-lineh'));
     $(noenText).css("font-family", font);
     $(noenText).css("line-height", $(font_li).attr('data-lineh'));
@@ -294,13 +294,16 @@ function selectLineColumn(obj) {
     var no_ch, height, aspect_ratio, width, sq, manufacture_cost, conversion, shipping_cost, total_cost;
     if (getId == "three-line-tab") {
         centerAlignEle(noenText);
-        noenText2 = '.noenText2'
+        noenText2 = '.noenText2';
         centerAlignEle(noenText2);
-        noenText3 = '.noenText3'
+        noenText3 = '.noenText3';
         centerAlignEle(noenText3);
-        $(noenText).html($("#three_text_1").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', $(noenText).data("size") + "px");
-        $(noenText2).html($("#three_text_2").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', $(noenText2).data("size") + "px");
-        $(noenText3).html($("#three_text_3").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', $(noenText3).data("size") + "px");
+        noenText1FontSize = window.innerWidth < 760 ? $(noenText).data("mob") : $(noenText).data("size");
+        noenText2FontSize = window.innerWidth < 760 ? $(noenText2).data("mob") : $(noenText2).data("size");
+        noenText3FontSize = window.innerWidth < 760 ? $(noenText3).data("mob") : $(noenText3).data("size");
+        $(noenText).html($("#three_text_1").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', noenText1FontSize + "px");
+        $(noenText2).html($("#three_text_2").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', noenText2FontSize + "px");
+        $(noenText3).html($("#three_text_3").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', noenText3FontSize + "px");
         $(noenText + "," + noenText2 + "," + noenText3).show();
         $("#lineonefinaltext").html($("#three_text_1").val()).show();
         $("#linetwofinaltext").html("," + $("#three_text_2").val()).show();
@@ -313,8 +316,10 @@ function selectLineColumn(obj) {
         noenText2 = '.noenText2'
         centerAlignEle(noenText2);
         $(noenText3).hide();
-        $(noenText).html($("#two_text_1").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', $(noenText).data("size") + "px");
-        $(noenText2).html($("#two_text_2").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', $(noenText2).data("size") + "px");
+        noenText1FontSize = window.innerWidth < 760 ? $(noenText).data("mob") : $(noenText).data("size");
+        noenText2FontSize = window.innerWidth < 760 ? $(noenText2).data("mob") : $(noenText2).data("size");
+        $(noenText).html($("#two_text_1").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', noenText1FontSize + "px");
+        $(noenText2).html($("#two_text_2").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', noenText2FontSize + "px");
         $(noenText + "," + noenText2).show();
         $("#lineonefinaltext").html($("#two_text_1").val()).show();
         $("#linetwofinaltext").html("," + $("#two_text_2").val()).show();
@@ -328,11 +333,13 @@ function selectLineColumn(obj) {
         $(noenText2 + "," + noenText3).hide();
         $(noenText).show();
         centerAlignEle(noenText);
-        $(noenText).html($("#one_text_1").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', $(noenText).data("size") + "px");
+        noenText1FontSize = window.innerWidth < 760 ? $(noenText).data("mob") : $(noenText).data("size");
+        $(noenText).html($("#one_text_1").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', noenText1FontSize + "px");
         $("#lineonefinaltext").html($("#one_text_1").val()).show();
 
         cost_calcultor($(noenText));
 
+        console.log(noenText1FontSize + "  " + noenText2FontSize + "    " + noenText3FontSize);
     }
 
 }
@@ -495,8 +502,10 @@ function getClass(e) {
         $(noenText).removeClass(font_class);
     });
     $(noenText).addClass($(e).data("class"));
-    $(noenText).css('font-size', $(e).data("desk") + "px")
+    window.innerWidth < 760 ? $(noenText).css('font-size', $(e).data("mob") + "px !important") : $(noenText).css('font-size', $(e).data("desk") + "px !important");
+    // $(noenText).css('font-size', $(e).data("desk") + "px")
     $(noenText).attr("data-size", $(e).data("desk"));
+    $(noenText).attr("data-mob", $(e).data("mob"));
     $(noenText).attr("data-class", $(e).data("class"));
     $(noenText).attr("data-height", $(e).data("height"));
     $(noenText).attr("data-aspect_ratio", $(e).data("aspect_ratio"));
