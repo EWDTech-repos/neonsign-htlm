@@ -339,7 +339,6 @@ function selectLineColumn(obj) {
 
         cost_calcultor($(noenText));
 
-        console.log(noenText1FontSize + "  " + noenText2FontSize + "    " + noenText3FontSize);
     }
 
 }
