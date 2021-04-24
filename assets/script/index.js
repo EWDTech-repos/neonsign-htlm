@@ -17,7 +17,8 @@ $(document).ready(function() {
         $(noenText).css('color', color);
 
     });
-
+    var timestamp = new Date().valueOf();
+    $('.unique_id').html(timestamp + ";")
 
     // if (location.protocol !== "https:" || location.protocol === "www") {
     //     location.protocol = "https:";
@@ -103,7 +104,7 @@ function getFontSize() {
 
 var widthReturn = false;
 var fontDataClassHeight = '';
-var sizeIncreament1 = sizeIncreament2 = sizeIncreament3 = 0;
+
 
 function increaseSize() {
     var fontSize = getFontSize();
@@ -119,10 +120,6 @@ function increaseSize() {
         fontDataClassHeight = $(noenText).attr('data-class');
         // parseInt($('.' + fontDataClassHeight).attr("data-height", increment));
 
-
-
-        var noenTextId = $(noenText)[1].id;
-        noenTextId == 'noenText1' ? sizeIncreament1++ : noenTextId == 'noenText2' ? sizeIncreament2++ : sizeIncreament3++;
         if ($('li.active').hasClass('one'))
             widthReturn = cost_calcultor($('.noenText1'));
         else if ($('li.active').hasClass('two'))
@@ -187,10 +184,10 @@ function decreaseSize() {
     var objFontSize = parseInt($(noenText).attr("data-height"));
     var objFontName = $(noenText).attr("data-class");
     var increment = objFontSize - 1;
-    var noenTextId = $(noenText)[1].id;
+
     if (increment < ObjMinFontSize[objFontName])
         return false;
-    noenTextId == 'noenText1' ? sizeIncreament1-- : noenTextId == 'noenText2' ? sizeIncreament2-- : sizeIncreament3--;
+
     fontDataClassHeight = $(noenText).attr('data-class');
     parseInt($('.' + fontDataClassHeight).attr("data-height", increment));
     if ($('li.active').hasClass('one'))
@@ -237,16 +234,12 @@ function setLineHeight(lineHeight) {
 }
 
 function cost_calcultor(nText1, nText2, nText3) {
-    console.log(nText1.attr("data-height"));
-    // console.log(sizeIncreament1, sizeIncreament2, sizeIncreament3);
-    var finalHeight = nText1 != null && nText2 == null && nText3 == null ? (parseInt(nText1.attr("data-height"))) : nText1 != null && nText2 != null && nText3 == null ? ((parseInt(nText1.attr("data-height")) + sizeIncreament1) + (parseInt(nText2.attr("data-height")) + sizeIncreament2)) : ((parseInt(nText1.attr("data-height")) + sizeIncreament1) + (parseInt(nText2.attr("data-height")) + sizeIncreament2) + (parseInt(nText3.attr("data-height")) + sizeIncreament3));
+    var finalHeight = nText1 != null && nText2 == null && nText3 == null ? (parseInt(nText1.attr("data-height"))) : nText1 != null && nText2 != null && nText3 == null ? ((parseInt(nText1.attr("data-height"))) + (parseInt(nText2.attr("data-height")))) : ((parseInt(nText1.attr("data-height"))) + (parseInt(nText2.attr("data-height"))) + (parseInt(nText3.attr("data-height"))));
     // var noOfLines = nText1 != null && nText2 == null && nText3 == null ? 1 : nText1 != null && nText2 != null && nText3 == null ? 2 : 3;
-    if (nText2 != null) {
-
+    if (nText2 != null)
         var textOBJ = get_obj_width(nText1) > get_obj_width(nText2) && nText3 == null ? nText1 : (nText3 != null && (get_obj_width(nText3) > get_obj_width(nText2)) && (get_obj_width(nText3) > get_obj_width(nText1))) ? nText3 : (nText3 != null && (get_obj_width(nText1) > get_obj_width(nText2)) && (get_obj_width(nText1) > get_obj_width(nText3))) ? nText1 : nText2;
-    } else
+    else
         var textOBJ = nText1;
-
     finalHeight += get_height(textOBJ);
     finalWidth = get_obj_width(textOBJ);
     if (finalWidth > 72)
@@ -265,9 +258,9 @@ function cost_calcultor(nText1, nText2, nText3) {
 }
 
 function get_height(inputOBJ) {
+    console.log("height function  " + inputOBJ.html());
 
     fontHeight = parseInt(inputOBJ.attr("data-height"));
-    console.log(fontHeight);
     noOfLines = (inputOBJ.html().match(/<br>/g) || []).length > 0 ? (inputOBJ.html().match(/<br>/g) || []).length : 0;
     return (fontHeight * noOfLines);
 }
@@ -275,6 +268,7 @@ function get_height(inputOBJ) {
 function get_obj_width(textOBJ) {
     noOfLines = 1;
     var textBreak = textOBJ.html().split('<br>')
+    console.log(textOBJ.html());
     var textMax = '';
     for (var i = 0; i < textBreak.length; i++) {
         if (i == 0)
@@ -285,6 +279,7 @@ function get_obj_width(textOBJ) {
     nChar = textMax;
     aspectRatio = parseFloat(textOBJ.attr('data-aspect_ratio'));
     noOfLines = (textOBJ.html().match(/<br>/g) || []).length > 0 ? (textOBJ.html().match(/<br>/g) || []).length + noOfLines : noOfLines + 0;
+
     if (noOfLines > 1)
         height = (parseInt(textOBJ.attr("data-height"))) * noOfLines;
     else
@@ -332,6 +327,7 @@ function selectLineColumn(obj) {
         $(noenText + "," + noenText2).show();
         $("#lineonefinaltext").html($("#two_text_1").val()).show();
         $("#linetwofinaltext").html("," + $("#two_text_2").val()).show();
+        $("#linethreefineltext").html('');
         cost_calcultor($(noenText), $(noenText2));
 
 
@@ -345,7 +341,8 @@ function selectLineColumn(obj) {
         noenText1FontSize = window.innerWidth < 760 ? $(noenText).data("mob") : $(noenText).data("size");
         $(noenText).html($("#one_text_1").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', noenText1FontSize + "px");
         $("#lineonefinaltext").html($("#one_text_1").val()).show();
-
+        $("#linetwofinaltext").html('');
+        $("#linethreefineltext").html('');
         cost_calcultor($(noenText));
 
     }
