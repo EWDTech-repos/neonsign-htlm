@@ -103,6 +103,7 @@ function getFontSize() {
 
 var widthReturn = false;
 var fontDataClassHeight = '';
+var sizeIncreament1 = sizeIncreament2 = sizeIncreament3 = 0;
 
 function increaseSize() {
     var fontSize = getFontSize();
@@ -116,8 +117,12 @@ function increaseSize() {
         var increment = objFontSize + 1;
         objFontSize = parseInt($(noenText).attr("data-height", increment));
         fontDataClassHeight = $(noenText).attr('data-class');
-        parseInt($('.' + fontDataClassHeight).attr("data-height", increment));
+        // parseInt($('.' + fontDataClassHeight).attr("data-height", increment));
 
+
+
+        var noenTextId = $(noenText)[1].id;
+        noenTextId == 'noenText1' ? sizeIncreament1++ : noenTextId == 'noenText2' ? sizeIncreament2++ : sizeIncreament3++;
         if ($('li.active').hasClass('one'))
             widthReturn = cost_calcultor($('.noenText1'));
         else if ($('li.active').hasClass('two'))
@@ -182,8 +187,10 @@ function decreaseSize() {
     var objFontSize = parseInt($(noenText).attr("data-height"));
     var objFontName = $(noenText).attr("data-class");
     var increment = objFontSize - 1;
+    var noenTextId = $(noenText)[1].id;
     if (increment < ObjMinFontSize[objFontName])
         return false;
+    noenTextId == 'noenText1' ? sizeIncreament1-- : noenTextId == 'noenText2' ? sizeIncreament2-- : sizeIncreament3--;
     fontDataClassHeight = $(noenText).attr('data-class');
     parseInt($('.' + fontDataClassHeight).attr("data-height", increment));
     if ($('li.active').hasClass('one'))
@@ -200,8 +207,9 @@ function decreaseSize() {
 }
 
 function setFontSize(size) {
-    $('span.' + fontDataClassHeight).css("font-size", size);
+    // $('span.' + fontDataClassHeight).css("font-size", size);
     // $('.neon').querySelector(fontDataClassHeight).css("font-size", size);
+    $(noenText).css("font-size", size);
 }
 
 function getLineHeight() {
@@ -230,8 +238,8 @@ function setLineHeight(lineHeight) {
 
 function cost_calcultor(nText1, nText2, nText3) {
 
-
-    var finalHeight = nText1 != null && nText2 == null && nText3 == null ? parseInt(nText1.attr("data-height")) : nText1 != null && nText2 != null && nText3 == null ? ((parseInt(nText1.attr("data-height"))) + (parseInt(nText2.attr("data-height")))) : ((parseInt(nText1.attr("data-height"))) + (parseInt(nText2.attr("data-height"))) + (parseInt(nText3.attr("data-height"))));
+    // console.log(sizeIncreament1, sizeIncreament2, sizeIncreament3);
+    var finalHeight = nText1 != null && nText2 == null && nText3 == null ? (parseInt(nText1.attr("data-height")) + sizeIncreament1) : nText1 != null && nText2 != null && nText3 == null ? ((parseInt(nText1.attr("data-height")) + sizeIncreament1) + (parseInt(nText2.attr("data-height")) + sizeIncreament2)) : ((parseInt(nText1.attr("data-height")) + sizeIncreament1) + (parseInt(nText2.attr("data-height")) + sizeIncreament2) + (parseInt(nText3.attr("data-height")) + sizeIncreament3));
     // var noOfLines = nText1 != null && nText2 == null && nText3 == null ? 1 : nText1 != null && nText2 != null && nText3 == null ? 2 : 3;
     if (nText2 != null) {
 
