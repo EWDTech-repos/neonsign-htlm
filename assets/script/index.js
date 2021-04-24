@@ -237,9 +237,9 @@ function setLineHeight(lineHeight) {
 }
 
 function cost_calcultor(nText1, nText2, nText3) {
-
+    console.log(nText1.attr("data-height"));
     // console.log(sizeIncreament1, sizeIncreament2, sizeIncreament3);
-    var finalHeight = nText1 != null && nText2 == null && nText3 == null ? (parseInt(nText1.attr("data-height")) + sizeIncreament1) : nText1 != null && nText2 != null && nText3 == null ? ((parseInt(nText1.attr("data-height")) + sizeIncreament1) + (parseInt(nText2.attr("data-height")) + sizeIncreament2)) : ((parseInt(nText1.attr("data-height")) + sizeIncreament1) + (parseInt(nText2.attr("data-height")) + sizeIncreament2) + (parseInt(nText3.attr("data-height")) + sizeIncreament3));
+    var finalHeight = nText1 != null && nText2 == null && nText3 == null ? (parseInt(nText1.attr("data-height"))) : nText1 != null && nText2 != null && nText3 == null ? ((parseInt(nText1.attr("data-height")) + sizeIncreament1) + (parseInt(nText2.attr("data-height")) + sizeIncreament2)) : ((parseInt(nText1.attr("data-height")) + sizeIncreament1) + (parseInt(nText2.attr("data-height")) + sizeIncreament2) + (parseInt(nText3.attr("data-height")) + sizeIncreament3));
     // var noOfLines = nText1 != null && nText2 == null && nText3 == null ? 1 : nText1 != null && nText2 != null && nText3 == null ? 2 : 3;
     if (nText2 != null) {
 
@@ -267,6 +267,7 @@ function cost_calcultor(nText1, nText2, nText3) {
 function get_height(inputOBJ) {
 
     fontHeight = parseInt(inputOBJ.attr("data-height"));
+    console.log(fontHeight);
     noOfLines = (inputOBJ.html().match(/<br>/g) || []).length > 0 ? (inputOBJ.html().match(/<br>/g) || []).length : 0;
     return (fontHeight * noOfLines);
 }
