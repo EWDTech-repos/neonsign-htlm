@@ -395,11 +395,21 @@ function centerAlignEle(noenText) {
     var parentWidth = $(noenText).parent().parent().parent().parent().width();
     var parentHeight = $(noenText).parent().parent().parent().parent().height();
     var horizontalCenterPosition = (parentWidth / 3);
-    var verticalCenterPosition = Math.floor(parentHeight / 6);
+    if (window.innerWidth > 900) {
+        var verticlePosition = 6;
+        var horizontalPosition = 100;
+    } else if (window.innerWidth < 900 && window.innerWidth > 760) {
+        verticlePosition = 12;
+        horizontalPosition = 80;
+    } else if (window.innerWidth < 760) {
+        verticlePosition = 80;
+        horizontalPosition = 60;
+    }
+    var verticalCenterPosition = Math.floor(parentHeight / verticlePosition);
     if (noenText == ".noenText2") {
-        verticalCenterPosition = verticalCenterPosition + 100;
+        verticalCenterPosition = verticalCenterPosition + horizontalPosition;
     } else if (noenText == ".noenText3") {
-        verticalCenterPosition = verticalCenterPosition + 200;
+        verticalCenterPosition = verticalCenterPosition + horizontalPosition + 50;
     } else {
         verticalCenterPosition = verticalCenterPosition;
     }
@@ -447,13 +457,19 @@ function checkFontSize(noenText, noenText2, noenText3) {
         noenText2FontSize = parseInt($(noenText2).data("size"));
         noenText3FontSize = parseInt($(noenText3).data("size"));
     } else if (window.innerWidth < 900 && window.innerWidth > 760) {
-        noenText1FontSize = parseInt($(noenText).data("mob")) + 10;
-        noenText2FontSize = parseInt($(noenText2).data("mob")) + 10;
-        noenText3FontSize = parseInt($(noenText3).data("mob")) + 10;
+        noenText1FontSize = parseInt($(noenText).data("mob")) - 5;
+        $(noenText).attr('data-mob', noenText1FontSize);
+        noenText2FontSize = parseInt($(noenText2).data("mob")) - 5;
+        $(noenText2).attr('data-mob', noenText2FontSize);
+        noenText3FontSize = parseInt($(noenText3).data("mob")) - 5;
+        $(noenText3).attr('data-mob', noenText3FontSize);
     } else if (window.innerWidth < 760) {
-        noenText1FontSize = parseInt($(noenText).data("mob"));
-        noenText2FontSize = parseInt($(noenText2).data("mob"));
-        noenText3FontSize = parseInt($(noenText3).data("mob"));
+        noenText1FontSize = parseInt($(noenText).data("mob")) - 10;
+        $(noenText).attr('data-mob', noenText1FontSize);
+        noenText2FontSize = parseInt($(noenText2).data("mob")) - 10;
+        $(noenText2).attr('data-mob', noenText2FontSize);
+        noenText3FontSize = parseInt($(noenText3).data("mob")) - 10;
+        $(noenText3).attr('data-mob', noenText3FontSize);
     }
     return [noenText1FontSize, noenText2FontSize, noenText3FontSize];
 
