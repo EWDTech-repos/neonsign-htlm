@@ -78,6 +78,8 @@ function setFont(font, type, font_li) {
     $('.font-btn').removeClass('activeFont');
     var activeFont = $(font_li).addClass('activeFont');
     $(noenText).css("font-family", font);
+    // console.log($(font_li).attr('data-size'));
+    // var fontSize = window.innerWidth < 760 ? $(noenText).css("font-size", $(font_li).attr('data-mob') + 'px') : $(noenText).css("font-size", $(font_li).attr('data-desk') + 'px');
     $(noenText).css("font-size", $(font_li).attr('data-desk') + 'px')
     $(noenText).css("line-height", $(font_li).attr('data-lineh'));
     $(noenText).css("font-family", font);
@@ -301,7 +303,9 @@ function selectLineColumn(obj) {
         centerAlignEle(noenText2);
         noenText3 = '.noenText3';
         centerAlignEle(noenText3);
-
+        // noenText1FontSize = window.innerWidth < 760 ? $(noenText).data("mob") : $(noenText).data("size");
+        // noenText2FontSize = window.innerWidth < 760 ? $(noenText2).data("mob") : $(noenText2).data("size");
+        // noenText3FontSize = window.innerWidth < 760 ? $(noenText3).data("mob") : $(noenText3).data("size");
         $(noenText).html($("#three_text_1").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', parseInt($(noenText).attr('data-size')) + "px");
         $(noenText2).html($("#three_text_2").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', parseInt($(noenText2).attr('data-size')) + "px");
         $(noenText3).html($("#three_text_3").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', parseInt($(noenText3).attr('data-size')) + "px");
@@ -317,7 +321,8 @@ function selectLineColumn(obj) {
         noenText2 = '.noenText2'
         centerAlignEle(noenText2);
         $(noenText3).hide();
-
+        // noenText1FontSize = window.innerWidth < 760 ? $(noenText).data("mob") : $(noenText).data("size");
+        // noenText2FontSize = window.innerWidth < 760 ? $(noenText2).data("mob") : $(noenText2).data("size");
         $(noenText).html($("#two_text_1").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', parseInt($(noenText).attr('data-size')) + "px");
         $(noenText2).html($("#two_text_2").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', parseInt($(noenText2).attr('data-size')) + "px");
         $(noenText + "," + noenText2).show();
@@ -335,7 +340,7 @@ function selectLineColumn(obj) {
         $(noenText).show();
         centerAlignEle(noenText);
 
-
+        // noenText1FontSize = window.innerWidth < 760 ? $(noenText).data("mob") : $(noenText).data("size");
         $(noenText).html($("#one_text_1").val().replace(/\r\n|\r|\n/g, '<br>')).css('font-size', parseInt($(noenText).attr('data-size')) + "px");
         $("#lineonefinaltext").html($("#one_text_1").val()).show();
         $("#linetwofinaltext").html('');
@@ -465,7 +470,12 @@ function checkFontSize(noenText, noenText2, noenText3) {
                 noenText3FontSize = $(noenText3).attr("data-size", decreasedFontSize).data('size');
             }
         });
-
+        // noenText1FontSize = parseInt($(noenText).data("mob")) - 5;
+        // $(noenText).attr('data-mob', noenText1FontSize);
+        // noenText2FontSize = parseInt($(noenText2).data("mob")) - 5;
+        // $(noenText2).attr('data-mob', noenText2FontSize);
+        // noenText3FontSize = parseInt($(noenText3).data("mob")) - 5;
+        // $(noenText3).attr('data-mob', noenText3FontSize);
     } else if (window.innerWidth < 760 && window.innerWidth > 500) {
         $.each($(".font-div"), function() {
             $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - 55);
@@ -478,7 +488,13 @@ function checkFontSize(noenText, noenText2, noenText3) {
                 noenText3FontSize = $(noenText3).attr("data-size", decreasedFontSize).data('size');
             }
         });
-
+        // console.log(noenText1FontSize, noenText2FontSize, noenText3FontSize);
+        // noenText1FontSize = parseInt($(noenText).data("mob")) - 10;
+        // $(noenText).attr('data-mob', noenText1FontSize);
+        // noenText2FontSize = parseInt($(noenText2).data("mob")) - 10;
+        // $(noenText2).attr('data-mob', noenText2FontSize);
+        // noenText3FontSize = parseInt($(noenText3).data("mob")) - 10;
+        // $(noenText3).attr('data-mob', noenText3FontSize);
     } else if (window.innerWidth < 500) {
         $.each($(".font-div"), function() {
             $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - 55);
@@ -491,7 +507,13 @@ function checkFontSize(noenText, noenText2, noenText3) {
                 noenText3FontSize = $(noenText3).attr("data-size", decreasedFontSize).data('size');
             }
         });
-
+        // console.log(noenText1FontSize, noenText2FontSize, noenText3FontSize);
+        // noenText1FontSize = parseInt($(noenText).data("mob")) - 10;
+        // $(noenText).attr('data-mob', noenText1FontSize);
+        // noenText2FontSize = parseInt($(noenText2).data("mob")) - 10;
+        // $(noenText2).attr('data-mob', noenText2FontSize);
+        // noenText3FontSize = parseInt($(noenText3).data("mob")) - 10;
+        // $(noenText3).attr('data-mob', noenText3FontSize);
     }
     return [noenText1FontSize, noenText2FontSize, noenText3FontSize];
 
@@ -581,6 +603,7 @@ function getClass(e) {
     else if ($('li.active').hasClass('three'))
         cost_calcultor($(noenText1), $(noenText2), $(noenText3));
 
+    // $(noenText).parent().parent().attr('onclick').click
 }
 
 setInterval(function() {
