@@ -410,7 +410,7 @@ function centerAlignEle(noenText) {
     if (noenText == ".noenText2") {
         verticalCenterPosition = verticalCenterPosition + horizontalPosition;
     } else if (noenText == ".noenText3") {
-        verticalCenterPosition = verticalCenterPosition + horizontalPosition + 50;
+        verticalCenterPosition = verticalCenterPosition + horizontalPosition * 2;
     } else {
         verticalCenterPosition = verticalCenterPosition;
     }
