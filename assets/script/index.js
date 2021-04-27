@@ -402,9 +402,12 @@ function centerAlignEle(noenText) {
     } else if (window.innerWidth < 900 && window.innerWidth > 760) {
         verticlePosition = 12;
         horizontalPosition = 80;
-    } else if (window.innerWidth < 760) {
+    } else if (window.innerWidth < 760 && window.innerWidth > 500) {
         verticlePosition = 80;
-        horizontalPosition = 60;
+        horizontalPosition = 40;
+    }else if (window.innerWidth < 500) {
+        verticlePosition = 100;
+        horizontalPosition = 30;
     }
     var verticalCenterPosition = Math.floor(parentHeight / verticlePosition);
     if (noenText == ".noenText2") {
@@ -460,7 +463,7 @@ function checkFontSize(noenText, noenText2, noenText3) {
         noenText3FontSize = parseInt($(noenText3).data("size"));
     } else if (window.innerWidth < 900 && window.innerWidth > 760) {
         $.each($(".font-div"), function() {
-            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - 40);
+            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - (parseInt($(this).attr("data-desk"))/100)*60);
             decreasedFontSize = $(this).data('desk')
             if ($(noenText).data("class") == $(this).data('class')) {
                 noenText1FontSize = $(noenText).attr("data-size", decreasedFontSize).data('size');
@@ -470,15 +473,10 @@ function checkFontSize(noenText, noenText2, noenText3) {
                 noenText3FontSize = $(noenText3).attr("data-size", decreasedFontSize).data('size');
             }
         });
-        // noenText1FontSize = parseInt($(noenText).data("mob")) - 5;
-        // $(noenText).attr('data-mob', noenText1FontSize);
-        // noenText2FontSize = parseInt($(noenText2).data("mob")) - 5;
-        // $(noenText2).attr('data-mob', noenText2FontSize);
-        // noenText3FontSize = parseInt($(noenText3).data("mob")) - 5;
-        // $(noenText3).attr('data-mob', noenText3FontSize);
+        
     } else if (window.innerWidth < 760 && window.innerWidth > 500) {
         $.each($(".font-div"), function() {
-            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - 55);
+            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - (parseInt($(this).attr("data-desk"))/100)*70);
             decreasedFontSize = $(this).data('desk')
             if ($(noenText).data("class") == $(this).data('class')) {
                 noenText1FontSize = $(noenText).attr("data-size", decreasedFontSize).data('size');
@@ -488,16 +486,10 @@ function checkFontSize(noenText, noenText2, noenText3) {
                 noenText3FontSize = $(noenText3).attr("data-size", decreasedFontSize).data('size');
             }
         });
-        // console.log(noenText1FontSize, noenText2FontSize, noenText3FontSize);
-        // noenText1FontSize = parseInt($(noenText).data("mob")) - 10;
-        // $(noenText).attr('data-mob', noenText1FontSize);
-        // noenText2FontSize = parseInt($(noenText2).data("mob")) - 10;
-        // $(noenText2).attr('data-mob', noenText2FontSize);
-        // noenText3FontSize = parseInt($(noenText3).data("mob")) - 10;
-        // $(noenText3).attr('data-mob', noenText3FontSize);
+      
     } else if (window.innerWidth < 500) {
         $.each($(".font-div"), function() {
-            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - 55);
+            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - (parseInt($(this).attr("data-desk"))/100)*80);
             decreasedFontSize = $(this).data('desk')
             if ($(noenText).data("class") == $(this).data('class')) {
                 noenText1FontSize = $(noenText).attr("data-size", decreasedFontSize).data('size');
@@ -507,13 +499,7 @@ function checkFontSize(noenText, noenText2, noenText3) {
                 noenText3FontSize = $(noenText3).attr("data-size", decreasedFontSize).data('size');
             }
         });
-        // console.log(noenText1FontSize, noenText2FontSize, noenText3FontSize);
-        // noenText1FontSize = parseInt($(noenText).data("mob")) - 10;
-        // $(noenText).attr('data-mob', noenText1FontSize);
-        // noenText2FontSize = parseInt($(noenText2).data("mob")) - 10;
-        // $(noenText2).attr('data-mob', noenText2FontSize);
-        // noenText3FontSize = parseInt($(noenText3).data("mob")) - 10;
-        // $(noenText3).attr('data-mob', noenText3FontSize);
+        
     }
     return [noenText1FontSize, noenText2FontSize, noenText3FontSize];
 
