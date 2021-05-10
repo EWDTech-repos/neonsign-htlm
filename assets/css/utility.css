@@ -47,62 +47,62 @@ a {
 
 @font-face {
     src: url("../fonts/Amsterdam.ttf");
-    font-family: Amsterdam;
+    font-family: Dancer;
 }
 
 @font-face {
     src: url("../fonts/Austin.ttf");
-    font-family: Austin;
+    font-family: Assalwa;
 }
 
 @font-face {
     src: url("../fonts/Avante.ttf");
-    font-family: Avante;
+    font-family: AvantGrade;
 }
 
 @font-face {
     src: url("../fonts/Barcelona.ttf");
-    font-family: Barcelona;
+    font-family: Barcelony;
 }
 
 @font-face {
     src: url("../fonts/Bayview.ttf");
-    font-family: Bayview;
+    font-family: Bayshore;
 }
 
 @font-face {
     src: url("../fonts/Beachfront.ttf");
-    font-family: Beachfront;
+    font-family: Quinzey;
 }
 
 @font-face {
     src: url("../fonts/Buttercup.ttf");
-    font-family: Buttercup;
+    font-family: PaperDaisy;
 }
 
 @font-face {
     src: url("../fonts/Chelsea.ttf");
-    font-family: Chelsea;
+    font-family: Sebastian;
 }
 
 @font-face {
     src: url("../fonts/ClassicType.ttf");
-    font-family: ClassicType;
+    font-family: NixieOne;
 }
 
 @font-face {
     src: url("../fonts/Freehand.ttf");
-    font-family: Freehand;
+    font-family: Hesterica;
 }
 
 @font-face {
     src: url("../fonts/Freespirit.ttf");
-    font-family: Freespirit;
+    font-family: Budhayan;
 }
 
 @font-face {
     src: url("../fonts/Greenworld.ttf");
-    font-family: Greenworld;
+    font-family: Gruenewald;
 }
 
 @font-face {
@@ -112,7 +112,7 @@ a {
 
 @font-face {
     src: url("../fonts/LoveNeon.ttf");
-    font-family: LoveNeon;
+    font-family: LOVELO;
 }
 
 @font-face {
@@ -132,12 +132,12 @@ a {
 
 @font-face {
     src: url("../fonts/Melbourne.ttf");
-    font-family: Melbourne;
+    font-family: Roboto;
 }
 
 @font-face {
     src: url("../fonts/Monaco.ttf");
-    font-family: Monaco;
+    font-family: DOLCEVITA;
 }
 
 @font-face {
@@ -152,17 +152,17 @@ a {
 
 @font-face {
     src: url("../fonts/Neonscript.ttf");
-    font-family: Neonscript;
+    font-family: Hamilton;
 }
 
 @font-face {
     src: url("../fonts/Neontrace.ttf");
-    font-family: Neontrace;
+    font-family: NEONTUBE;
 }
 
 @font-face {
     src: url("../fonts/NeoTokyo.ttf");
-    font-family: NeoTokyo;
+    font-family: BRAVE;
 }
 
 @font-face {
@@ -177,7 +177,7 @@ a {
 
 @font-face {
     src: url("../fonts/Northshore.ttf");
-    font-family: Northshore;
+    font-family: Northwell;
 }
 
 @font-face {
@@ -187,7 +187,7 @@ a {
 
 @font-face {
     src: url("../fonts/Royalty.ttf");
-    font-family: Royalty;
+    font-family: RedVelvet;
 }
 
 @font-face {
@@ -212,7 +212,7 @@ a {
 
 @font-face {
     src: url("../fonts/Waikiki.ttf");
-    font-family: Waikiki;
+    font-family: KIONA;
 }
 
 @font-face {
@@ -225,6 +225,21 @@ a {
     font-family: RetroSignature;
 }
 
+@font-face {
+    src: url("../fonts/Bauhaus.ttf");
+    font-family: Bauhaus;
+}
+@font-face {
+    src: url("../fonts/Outline.ttf");
+    font-family: Outline;
+}
+.Outline {
+    font-family: Outline !important;
+}
+.Bauhaus {
+    font-family: Bauhaus !important;
+}
+
 .RetroSignature {
     font-family: RetroSignature !important;
 }
@@ -233,8 +248,8 @@ a {
     font-family: WildScript !important;
 }
 
-.Waikiki {
-    font-family: Waikiki !important;
+.KIONA {
+    font-family: KIONA !important;
 }
 
 .Vintage {
@@ -253,16 +268,16 @@ a {
     font-family: SciFi !important;
 }
 
-.Royalty {
-    font-family: Royalty !important;
+.RedVelvet {
+    font-family: RedVelvet !important;
 }
 
 .Rocket {
     font-family: Rocket !important;
 }
 
-.Northshore {
-    font-family: Northshore !important;
+.Northwell {
+    font-family: Northwell !important;
 }
 
 .NewCursive {
@@ -273,16 +288,16 @@ a {
     font-family: Nevada !important;
 }
 
-.NeoTokyo {
-    font-family: NeoTokyo !important;
+.BRAVE {
+    font-family: BRAVE !important;
 }
 
-.Neontrace {
-    font-family: Neontrace !important;
+.NEONTUBE {
+    font-family: NEONTUBE !important;
 }
 
-.Neonscript {
-    font-family: Neonscript !important;
+.Hamilton {
+    font-family: Hamilton !important;
 }
 
 .NeonLite {
@@ -293,12 +308,12 @@ a {
     font-family: NeonGlow !important;
 }
 
-.Monaco {
-    font-family: Monaco !important;
+.DOLCEVITA {
+    font-family: DOLCEVITA !important;
 }
 
-.Melbourne {
-    font-family: Melbourne !important;
+.Roboto {
+    font-family: Roboto !important;
 }
 
 .Mayfair {
@@ -313,60 +328,60 @@ a {
     font-family: LoveNote !important;
 }
 
-.LoveNeon {
-    font-family: LoveNeon !important;
+.LOVELO {
+    font-family: LOVELO !important;
 }
 
 .Hamillton {
     font-family: Hamillton !important;
 }
 
-.Greenworld {
-    font-family: Greenworld !important;
+.Gruenewald {
+    font-family: Gruenewald !important;
 }
 
-.Freespirit {
-    font-family: Freespirit !important;
+.Budhayan {
+    font-family: Budhayan !important;
 }
 
-.Freehand {
-    font-family: Freehand !important;
+.Hesterica {
+    font-family: Hesterica !important;
 }
 
-.ClassicType {
-    font-family: ClassicType !important;
+.NixieOne {
+    font-family: NixieOne !important;
 }
 
-.Chelsea {
-    font-family: Chelsea !important;
+.Sebastian {
+    font-family: Sebastian !important;
 }
 
-.Buttercup {
-    font-family: Buttercup !important;
+.PaperDaisy {
+    font-family: PaperDaisy !important;
 }
 
-.Beachfront {
-    font-family: Beachfront !important;
+.Quinzey {
+    font-family: Quinzey !important;
 }
 
-.Bayview {
-    font-family: Bayview !important;
+.Bayshore {
+    font-family: Bayshore !important;
 }
 
-.Barcelona {
-    font-family: Barcelona !important;
+.Barcelony {
+    font-family: Barcelony !important;
 }
 
-.Avante {
-    font-family: Avante !important;
+.AvantGrade {
+    font-family: AvantGrade !important;
 }
 
-.Austin {
-    font-family: Austin !important;
+.Assalwa {
+    font-family: Assalwa !important;
 }
 
-.Amsterdam {
-    font-family: Amsterdam !important;
+.Dancer {
+    font-family: Dancer !important;
 }
 
 .Amanda {
