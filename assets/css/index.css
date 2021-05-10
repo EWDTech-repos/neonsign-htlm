@@ -251,10 +251,17 @@ li>a.active {
     color: #606060;
 }
 .bannar-img-main{
-    background-position: 200% !important;
+    background-size: 100% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    position:relative !important;
+}
+.bannar-img-main-zoom{
+    background-size: 200% !important;
     background-position-x: right !important;
     background-position-y: center !important;
-
+    background-repeat: no-repeat !important;
+    position:relative !important;
 }
 
 /* @media only screen and (max-width: 1600px) {

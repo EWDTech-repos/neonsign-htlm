@@ -434,12 +434,18 @@ function plusSlides(n) {
 
 function currentSlide(e,type) {
 
-    $('div.mySlides').css('background', ' url(' + $(e).attr('src') + ') center center / 100% no-repeat');
-    type == 'baby'|| type == 'room' ? $('div.mySlides').addClass('bannar-img-main'):$('div.mySlides').removeClass('bannar-img-main');
-    // if(type == 'baby_room'|| type == 'room')
-    //     $('div.mySlides').addClass('bannar-img-main');
-    // else
-    //     $('div.mySlides').removeClass('bannar-img-main');
+    $('div.mySlides').css('background', ' url(' + $(e).attr('src') + ')');
+    // type == 'baby'|| type == 'room' ? $('div.mySlides').addClass('bannar-img-main'):$('div.mySlides').removeClass('bannar-img-main');
+    if(type == 'baby_room'|| type == 'room'){
+
+        $('div.mySlides').addClass('bannar-img-main-zoom');
+        $('div.mySlides').removeClass('bannar-img-main');
+    }
+    else{
+        
+        $('div.mySlides').removeClass('bannar-img-main-zoom');
+         $('div.mySlides').addClass('bannar-img-main');
+     }
 
     $('div.mob_slide_image').removeClass('mobile_tab_img_active');
     $(e).addClass('mobile_tab_img_active');
