@@ -473,7 +473,7 @@ function checkFontSize(noenText, noenText2, noenText3) {
                 noenText3FontSize = $(noenText3).attr("data-size", decreasedFontSize).data('size');
             }
         });
-        
+
     } else if (window.innerWidth < 760 && window.innerWidth > 500) {
         $.each($(".font-div"), function() {
             $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - (parseInt($(this).attr("data-desk"))/100)*70);
@@ -486,7 +486,7 @@ function checkFontSize(noenText, noenText2, noenText3) {
                 noenText3FontSize = $(noenText3).attr("data-size", decreasedFontSize).data('size');
             }
         });
-      
+
     } else if (window.innerWidth < 500) {
         $.each($(".font-div"), function() {
             $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - (parseInt($(this).attr("data-desk"))/100)*80);
@@ -499,7 +499,7 @@ function checkFontSize(noenText, noenText2, noenText3) {
                 noenText3FontSize = $(noenText3).attr("data-size", decreasedFontSize).data('size');
             }
         });
-        
+
     }
     return [noenText1FontSize, noenText2FontSize, noenText3FontSize];
 
@@ -513,7 +513,7 @@ function myFunction() {
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
     alert('Custom detail has been copied, just paste to personalisation when order on etsy.')
-    window.location = "https://www.etsy.com/shop/BrianCraftDesign";
+    window.location = "https://www.etsy.com/listing/959563757/custom-neon-sign-neon-sign-colorful-neon";
 
 }
 
