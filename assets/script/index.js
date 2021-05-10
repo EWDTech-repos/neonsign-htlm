@@ -255,7 +255,10 @@ function cost_calcultor(nText1, nText2, nText3) {
     conversion = (2.54 * 2.54 * 2.54) / 5000;
     shipping_cost = (((finalWidth + 2) * ((finalHeight) + 2) * 4) * conversion) * 9.49 + 16.3;
     total_cost = (shipping_cost + manufacture_cost) * 2;
-    $('.price').html(total_cost.toFixed(0))
+    total_cost = total_cost.toFixed(0);
+    var changeToTen = total_cost.toString().charAt(total_cost.toString().length - 1);
+    total_cost = parseInt(changeToTen) >= 5 ? total_cost + (10 - parseInt(changeToTen)) : total_cost - parseInt(changeToTen);
+    $('.price').html(total_cost)
     $('.size').html(Math.round(finalWidth) + "x" + Math.round(finalHeight) + "inches(" + (Math.round(finalWidth) * 2.54).toFixed(0) + "x" + (Math.round(finalHeight) * 2.54).toFixed(0) + "cm);")
     return true;
 }
@@ -429,9 +432,15 @@ function plusSlides(n) {
     showSlides((slideIndex += n));
 }
 
-function currentSlide(e) {
+function currentSlide(e,type) {
 
     $('div.mySlides').css('background', ' url(' + $(e).attr('src') + ') center center / 100% no-repeat');
+    type == 'baby'|| type == 'room' ? $('div.mySlides').addClass('bannar-img-main'):$('div.mySlides').removeClass('bannar-img-main');
+    // if(type == 'baby_room'|| type == 'room')
+    //     $('div.mySlides').addClass('bannar-img-main');
+    // else
+    //     $('div.mySlides').removeClass('bannar-img-main');
+
     $('div.mob_slide_image').removeClass('mobile_tab_img_active');
     $(e).addClass('mobile_tab_img_active');
     // showSlides((slideIndex = n));
