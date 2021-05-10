@@ -250,7 +250,12 @@ li>a.active {
 .cl-606060 {
     color: #606060;
 }
+#bannar-img-main{
+    background-position: 200% !important;
+    background-position-x: right !important;
+    background-position-y: center !important;
 
+}
 
 /* @media only screen and (max-width: 1600px) {
     #lineTab {
