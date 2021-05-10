@@ -257,7 +257,7 @@ function cost_calcultor(nText1, nText2, nText3) {
     total_cost = (shipping_cost + manufacture_cost) * 2;
     total_cost = total_cost.toFixed(0);
     var changeToTen = total_cost.toString().charAt(total_cost.toString().length - 1);
-    total_cost = parseInt(changeToTen) >= 5 ? total_cost + (10 - parseInt(changeToTen)) : total_cost - parseInt(changeToTen);
+    total_cost = parseInt(changeToTen) >= 5 ? parseInt(total_cost) + parseInt(10 - parseInt(changeToTen)) : parseInt(total_cost) - parseInt(changeToTen);
     $('.price').html(total_cost)
     $('.size').html(Math.round(finalWidth) + "x" + Math.round(finalHeight) + "inches(" + (Math.round(finalWidth) * 2.54).toFixed(0) + "x" + (Math.round(finalHeight) * 2.54).toFixed(0) + "cm);")
     return true;
@@ -436,13 +436,13 @@ function currentSlide(e,type) {
 
     $('div.mySlides').css('background', ' url(' + $(e).attr('src') + ')');
     // type == 'baby'|| type == 'room' ? $('div.mySlides').addClass('bannar-img-main'):$('div.mySlides').removeClass('bannar-img-main');
-    if(type == 'baby_room'|| type == 'room'){
+    if(type == 'baby'|| type == 'room'){
 
         $('div.mySlides').addClass('bannar-img-main-zoom');
         $('div.mySlides').removeClass('bannar-img-main');
     }
     else{
-        
+
         $('div.mySlides').removeClass('bannar-img-main-zoom');
          $('div.mySlides').addClass('bannar-img-main');
      }
