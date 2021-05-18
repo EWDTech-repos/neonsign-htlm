@@ -137,41 +137,41 @@ function increaseSize() {
 }
 let ObjMinFontSize = {
     "Alexa": 7,
-    "Bayview": 8,
-    "Amsterdam": 7,
-    "Greenworld": 7,
+    "Bayshore": 8,
+    "Dancer": 7,
+    "Gruenewald": 7,
     "NewCursive": 7,
-    "Barcelona": 9,
+    "Barcelony": 9,
     "Vintage": 7,
     "Amanda": 9,
-    "Freespirit": 10,
-    "Chelsea": 10,
+    "Budhayan": 10,
+    "Sebastian": 10,
     "Signature": 9,
-    "Austin": 8,
-    "Neonscript": 12,
-    "Freehand": 9,
+    "Assalwa": 8,
+    "Hamilton": 12,
+    "Hesterica": 9,
     "LoveNote": 7,
-    "Northshore": 10,
-    "Beachfront": 8,
-    "Royalty": 9,
+    "Northwell": 10,
+    "Quinzey": 8,
+    "RedVelvet": 9,
     "Rocket": 7,
     "WildScript": 12,
-    "Avante": 5,
-    "Monaco": 5,
-    "Waikiki": 5,
-    "ClassicType": 5,
+    "AvantGrade": 5,
+    "Bauhaus": 6,
+    "DOLCEVITA": 5,
+    "KIONA": 5,
+    "NixieOne": 5,
     "Typewriter": 5,
-    "Buttercup": 6,
-    "Melbourne": 6,
-    "NeoTokyo": 6,
-    "LoveNeon": 11,
+    "PaperDaisy": 6,
+    "Roboto": 6,
+    "BRAVE": 6,
+    "LOVELO": 11,
     "Marquee": 11,
-    "Mayfair": 0,
     "NeonGlow": 11,
     "NeonLite": 6,
-    "Neontrace": 8,
-    "Nevada": 11,
-    "SciFi": 11,
+    "NEONTUBE": 8,
+    "Outline": 11,
+    "SciFi": 18,
 
 };
 
@@ -408,7 +408,7 @@ function centerAlignEle(noenText) {
     } else if (window.innerWidth < 760 && window.innerWidth > 500) {
         verticlePosition = 80;
         horizontalPosition = 40;
-    }else if (window.innerWidth < 500) {
+    } else if (window.innerWidth < 500) {
         verticlePosition = 100;
         horizontalPosition = 30;
     }
@@ -432,20 +432,19 @@ function plusSlides(n) {
     showSlides((slideIndex += n));
 }
 
-function currentSlide(e,type) {
+function currentSlide(e, type) {
 
     $('div.mySlides').css('background', ' url(' + $(e).attr('src') + ')');
     // type == 'baby'|| type == 'room' ? $('div.mySlides').addClass('bannar-img-main'):$('div.mySlides').removeClass('bannar-img-main');
-    if(type == 'baby'|| type == 'room'){
+    if (type == 'baby' || type == 'room') {
 
         $('div.mySlides').addClass('bannar-img-main-zoom');
         $('div.mySlides').removeClass('bannar-img-main');
-    }
-    else{
+    } else {
 
         $('div.mySlides').removeClass('bannar-img-main-zoom');
-         $('div.mySlides').addClass('bannar-img-main');
-     }
+        $('div.mySlides').addClass('bannar-img-main');
+    }
 
     $('div.mob_slide_image').removeClass('mobile_tab_img_active');
     $(e).addClass('mobile_tab_img_active');
@@ -478,7 +477,7 @@ function checkFontSize(noenText, noenText2, noenText3) {
         noenText3FontSize = parseInt($(noenText3).data("size"));
     } else if (window.innerWidth < 900 && window.innerWidth > 760) {
         $.each($(".font-div"), function() {
-            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - (parseInt($(this).attr("data-desk"))/100)*60);
+            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - (parseInt($(this).attr("data-desk")) / 100) * 60);
             decreasedFontSize = $(this).data('desk')
             if ($(noenText).data("class") == $(this).data('class')) {
                 noenText1FontSize = $(noenText).attr("data-size", decreasedFontSize).data('size');
@@ -491,7 +490,7 @@ function checkFontSize(noenText, noenText2, noenText3) {
 
     } else if (window.innerWidth < 760 && window.innerWidth > 500) {
         $.each($(".font-div"), function() {
-            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - (parseInt($(this).attr("data-desk"))/100)*70);
+            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - (parseInt($(this).attr("data-desk")) / 100) * 70);
             decreasedFontSize = $(this).data('desk')
             if ($(noenText).data("class") == $(this).data('class')) {
                 noenText1FontSize = $(noenText).attr("data-size", decreasedFontSize).data('size');
@@ -504,7 +503,7 @@ function checkFontSize(noenText, noenText2, noenText3) {
 
     } else if (window.innerWidth < 500) {
         $.each($(".font-div"), function() {
-            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - (parseInt($(this).attr("data-desk"))/100)*80);
+            $(this).attr('data-desk', parseInt($(this).attr("data-desk")) - (parseInt($(this).attr("data-desk")) / 100) * 80);
             decreasedFontSize = $(this).data('desk')
             if ($(noenText).data("class") == $(this).data('class')) {
                 noenText1FontSize = $(noenText).attr("data-size", decreasedFontSize).data('size');
