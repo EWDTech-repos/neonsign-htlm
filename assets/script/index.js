@@ -19,7 +19,8 @@ $(document).ready(function() {
         $(noenText).css('color', color);
 
     });
-    var timestamp = new Date().valueOf();
+    var timestamp = new Date().getTime().toString().substr(-6);
+    var timestamp = timestamp.valueOf();
     $('.unique_id').html(timestamp + ";")
         // if (location.protocol !== "https:" || location.protocol === "www") {
         //     location.protocol = "https:";
